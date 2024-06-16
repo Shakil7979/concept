@@ -30,4 +30,19 @@
     .right_content_box a { 
         padding: 5px 4px; 
     }
+    .content_order_item_name h4 { 
+        font-size: 14px; 
+    }
+    .right_content_item p { 
+        font-size: 14px;
+    }
+    .btn_red{ 
+        font-size: 14px;
+    }
+    .search_group_btn button { 
+        font-size: 16px; 
+    }
+    .right_content_item { 
+        margin-top: 10px; 
+    }
 }

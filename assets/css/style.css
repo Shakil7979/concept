@@ -2,6 +2,7 @@
 
 html{
 	font-size: 62.5%;
+	overflow: hidden;
 }
 body{	
 	font-size: 1.6rem; 
@@ -49,6 +50,11 @@ ul li a,a{
 	top: -56px;
 	left: 0;
 	right: 0;
+}
+
+.main_container {
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 .login_form_form {
