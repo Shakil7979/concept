@@ -220,6 +220,7 @@ ul li a,a{
 	justify-content: center;
 	align-items: center;
 	font-weight: 700;
+	position: relative;
 }
 
 .search_order_green{ 
@@ -472,13 +473,14 @@ ul li a,a{
 
 .collection_product_top a {
 	background: #02EC78;
-	width: 81px;
+	width: 100px;
 	padding: 5px 0;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #fff;
+	color: #000;
+	font-weight: 700;
 }
 
 .collection_product_top h4 {
@@ -695,8 +697,15 @@ ul li a,a{
 	cursor: pointer;
 }
 
+.btn_green_order{
+	background: #02EC78 !important;
+}
+.btn_green_order,
 .btn_yellow {
-	background: #D8C100;
+	background: #D8C100; 
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 12px;
 }
 
 .cart_more_info span {
@@ -850,6 +859,7 @@ ul li a,a{
 
 .for_for_card.for_for_red {
 	background: #E04D38;
+	color: #fff !important;
 }
 
 .barcode_main_product_area {
@@ -939,7 +949,46 @@ ul li a,a{
 	margin: 25px 0;
 }
 
+.btn_for_yellow {
+	font-weight: 700;
+	color: #000 !important;
+	background-color: #D8C100 !important;
+}
 
+.side_tooltip_3,
+.side_tooltip_2,
+.side_tooltip_1 {
+	background: #263238;
+	font-size: 14px;
+	padding: 3px 10px;
+	color: #E04D38;
+	font-weight: 300;
+	position: absolute;
+	right: -65px;
+	top: 14px;
+	display: none;
+}
+
+.side_tooltip_3 {
+	color: #02EC78;
+}
+
+.side_tooltip_2 {
+	color: #D8C100;
+}
+
+.side_tooltip_3::after ,
+.side_tooltip_2::after ,
+.side_tooltip_1::after {
+	content: '';
+	position: absolute;
+	left: -29px;
+	top: 0px;
+	border-top: 13px solid transparent;
+	border-left: 13px solid transparent;
+	border-right: 16px solid #263238;
+	border-bottom: 14px solid transparent;
+}
 
 /*======================  End Page  ======================*/
 

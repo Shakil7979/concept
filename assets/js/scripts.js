@@ -28,6 +28,15 @@ $(document).ready(function(){
 		$('.order_calculate_popup').css({'right':'-100%'});   
 	});
 
+	$('.search_order, .search_order_red, .search_order_yellow, .search_order_green').hover(
+        function() {
+            $(this).find('.side_tooltip_1, .side_tooltip_2, .side_tooltip_3').show();
+        },
+        function() {
+            $(this).find('.side_tooltip_1, .side_tooltip_2, .side_tooltip_3').hide();
+        }
+    );
+
 
 
 });
