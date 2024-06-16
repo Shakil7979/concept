@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	$('html').removeAttr('class');
 
 	$(document).on('click','.right_content_item',function(){ 
 		$('.right_hide_content').hide();
