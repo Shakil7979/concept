@@ -2,12 +2,12 @@
 
 html{
 	font-size: 62.5%;
-	overflow: hidden;
+	overflow: hidden !important;
 }
 body{	
 	font-size: 1.6rem; 
 	font-weight: 400;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 	font-family: "Heebo", sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -55,6 +55,7 @@ ul li a,a{
 .main_container {
 	height: 100vh;
 	overflow-y: scroll;
+	position: relative;
 }
 
 .login_form_form {
@@ -346,9 +347,13 @@ ul li a,a{
 	background: #37474F;
 	right: -100%;
 	width: 66%;
-	height: 100%;
+	height: 100vh;
 	padding: 25px;
 	transition: 0.3s;
+}
+
+.barcode_product_with_scan img {
+	width: 100%;
 }
 
 .search_group input {
@@ -608,7 +613,7 @@ ul li a,a{
 
 .order_collection_top_menu {
 	position: fixed;
-	right: 50%;
+	right: 0;
 	width: 100%;
 	background: #dddddd70;
 	padding: 8px 6px;
@@ -629,7 +634,7 @@ ul li a,a{
 
 .cart_product_popup {
 	position: absolute;
-	bottom: -64%;
+	bottom: -500px;
 	left: 0;
 	background: #37474F;
 	width: 100%;

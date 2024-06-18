@@ -23,12 +23,13 @@
     }
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 413px){
     .order_calculate_btn { 
         width: 100%;
     }
-    .right_content_box a { 
-        padding: 5px 4px; 
+    .right_content_box a {
+        padding: 5px 10px;
+        font-size: 10px;
     }
     .content_order_item_name h4 { 
         font-size: 14px; 
@@ -66,7 +67,7 @@
     .collection_product_bottom a {
         width: 105px;
         padding: 5px 0;
-        font-size: 14px;
+        font-size: 12px;
     }
     .single_product_box img {
         width: 58px;
@@ -82,5 +83,9 @@
     }
     .order_card_cal_dis h3 {
         font-size: 34px; 
+    }
+    .right_content_box ul {
+        flex-wrap: wrap;
+        gap: 3px;
     }
 }
