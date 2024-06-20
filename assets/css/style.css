@@ -378,6 +378,7 @@ ul li a,a{
 	bottom: 0;
 	width: 100%;
 	background: #ffffffbd;
+	z-index: 99999;
 }
 
 .right_content_btn_red{
