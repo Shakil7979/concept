@@ -234,8 +234,8 @@ ul li a,a{
 .btn_red{ 
 	background: #E04D38;
 	color: #fff;
-	padding: 3px 10px;
-	border-radius: 12px;
+	padding: 3px 12px;
+	border-radius: 8px;
 }
 
 .order_list_body{ 
@@ -336,12 +336,13 @@ ul li a,a{
 	justify-content: center;
 	align-items: center;
 	border-radius: 100%;
+	color: #000;
 }
 
 .btn_wtp {
 	color: #37474f;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .btn_wtp:hover { 
@@ -752,8 +753,8 @@ ul li a,a{
 .btn_yellow {
 	background: #D8C100; 
 	color: #fff;
-	padding: 3px 10px;
-	border-radius: 12px;
+	padding: 3px 12px;
+	border-radius: 8px;
 	font-size: 12px;
 }
 
