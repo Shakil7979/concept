@@ -1,10 +1,22 @@
 $(document).ready(function(){
-	$('html').removeAttr('class');
 
-	$(document).on('click','.right_content_item',function(){ 
-		$('.right_hide_content').hide();
-		$(this).find('.right_hide_content').show();
-	});
+	$('html').removeAttr('class');
+	$('.login_form').css({'bottom':'0'});
+
+	// $(document).on('click','.right_content_item',function(){ 
+	// 	$('.right_hide_content').hide();
+	// 	$(this).find('.right_hide_content').show();
+	// });
+ 
+	$(document).on('click', '.right_content_item', function() {
+        var $content = $(this).find('.right_hide_content');
+        if ($content.is(':visible')) {
+            $content.hide();
+        } else {
+            $('.right_hide_content').hide(); // Hide all other content
+            $content.show();
+        }
+    });
 
 	$(document).on('click','.search_order',function(){ 
 		$('.table_search_slide_box').css({'right':'0'});   
