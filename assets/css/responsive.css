@@ -97,6 +97,9 @@
     .search_group_radio label {
         font-size: 12px; 
     }
+    .search_group_btn button { 
+        font-size: 18px !important; 
+    }
 }
 
 @media all and (max-width: 370px){
@@ -108,5 +111,57 @@
 @media all and (max-width: 365px){
     .login_img {
         max-width: 275px;
+    }
+    .search_group_btn button {
+        font-size: 14px !important;
+    }
+    .search_group_btn button img {
+        width: 18px;
+    }
+}
+
+@media all and (max-width: 355px){
+    .content_order_item_name h4 {
+        font-size: 10px;
+    }
+    .right_content_item p {
+        font-size: 10px;
+    }
+
+    .content_order_item_name span { 
+        font-size: 12px;
+    }
+    .btn_dark,
+    .btn_green { 
+        width: 85px; 
+        padding: 4px 8px; 
+        font-size: 10px;
+    }
+    .btn_wtp { 
+        font-size: 12px; 
+    }
+    .btn_wtp img {
+        width: 16px;
+    }
+    .search_order_green, .search_order_yellow, .search_order_red, .search_order {
+        width: 48px;
+        height: 48px; 
+    }
+    .search_order_green, .search_order_yellow, .search_order_red, .search_order {
+        
+        font-size: 20px; 
+    }
+    .right_content_item {
+        margin-top: 5px;
+    }
+    .search_group select, .search_group input { 
+        font-size: 12px;
+    }
+    .search_group_radio label {
+        font-size: 10px;
+    }
+    .search_group img {  
+        top: 5px;
+        width: 19px;
     }
 }
