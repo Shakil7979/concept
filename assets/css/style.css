@@ -385,7 +385,7 @@ ul li a,a{
 	width: 66%;
 	height: 100vh;
 	padding: 25px;
-	transition: 0.3s;
+	transition: 1s;
 }
 
 .barcode_product_with_scan img {
