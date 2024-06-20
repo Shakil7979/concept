@@ -94,6 +94,9 @@
     .right_content_box ul { 
         gap: 0px;
     }
+    .search_group_radio label {
+        font-size: 12px; 
+    }
 }
 
 @media all and (max-width: 365px){

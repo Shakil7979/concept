@@ -152,10 +152,11 @@ ul li a,a{
 }
 
 .right_content_items {
-    height: 86vh;
-    overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
+	height: 100vh;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	padding-top: 60px;
 }
 
 .right_content_items::-webkit-scrollbar {
@@ -262,10 +263,12 @@ ul li a,a{
 .search_order_green{ 
 	background: #02EC78;
 	margin-top: 5px; 
+	color: #000;
 }
 .search_order_yellow{ 
 	background: #D8C100;
 	margin-top: 5px; 
+	color: #000;
 }
 .search_order_red{ 
 	background: #E04D38;
@@ -371,6 +374,10 @@ ul li a,a{
 	align-items: center;
 	padding: 15px 0;
 	background: #fdfdfd5c;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #ffffffbd;
 }
 
 .right_content_btn_red{
@@ -392,6 +399,7 @@ ul li a,a{
 	width: 100%;
 }
 
+.search_group select ,
 .search_group input {
 	width: 100%;
 	margin-bottom: 11px;
@@ -406,13 +414,15 @@ ul li a,a{
 	position: relative;
 }
 
-.search_group i {
-	color: #02EC78;
+.search_group img {
 	font-size: 20px;
 	position: absolute;
-	left: 10px;
-	top: 11px;
-}	
+	left: 4px;
+	top: 6px;
+	width: 25px;
+	background: #263238;
+	width: 27px;
+}
 
 .search_group_radio {
 	display: flex;
@@ -421,7 +431,7 @@ ul li a,a{
 }
 
 .search_group_radio label {
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	margin-bottom: 0;
 }
@@ -429,10 +439,24 @@ ul li a,a{
 .search_group_btn button {
 	width: 100%;
 	border: none;
-	padding: 20px 0; 
+	padding: 20px 0;
 	margin-top: 35px;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 700 !important;
+	color: #263238 !important;
+	font-size: 21px !important;
+	border-radius: 40px !important;
+}
+
+.position_fixed_order {
+	position: absolute;
+	width: 100%;
+	background: #E0E0E0BD;
+	padding-bottom: 5px;
+}
+
+.search_group_btn button img {
+	width: 28px;
 }
 
 .search_box_slide h3 {
@@ -658,10 +682,6 @@ ul li a,a{
 .left_search_area {
 	position: relative;
 	z-index: 99;
-}
-
-.right_content_footer { 
-	background: #dddddd70 !important ;
 }
 
 .order_collection_box {
