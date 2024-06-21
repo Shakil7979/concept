@@ -148,6 +148,7 @@ ul li a,a{
 
 .order_list_area {
 	display: flex;
+	height: 100vh;
 	justify-content: space-between;
 }
 
@@ -831,7 +832,20 @@ ul li a,a{
 
 .cart_product_popup_2 {
 	position: absolute;
-	bottom: -192px;
+	bottom: -100%;
+	left: 0;
+	background: #37474F;
+	width: 100%;
+	z-index: 99999;
+	padding: 12px;
+	transition: 1s;
+	display: none;
+	border-radius: 15px 15px 0 0;
+}
+
+.cart_product_popup_3 {
+	position: absolute;
+	bottom: 0;
 	left: 0;
 	background: #37474F;
 	width: 100%;
