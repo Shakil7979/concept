@@ -661,6 +661,7 @@ ul li a,a{
 
 .collection_barcode img {
 	width: 38px !important;
+	cursor: pointer;
 }
 
 .collection_product_top h4 {
@@ -718,8 +719,7 @@ ul li a,a{
 }
 
 .order_collection_top_menu ul {
-	display: flex; 
-	position: sticky; 
+	display: flex;   
 	right: 0;
 	top: 0; 
 	z-index: 999;
@@ -800,7 +800,7 @@ ul li a,a{
 }
 
 .order_collection_top_menu {
-	position: fixed;
+	position: absolute;
 	right: 0;
 	width: 100%;
 	background: #dddddd70;
@@ -1003,9 +1003,16 @@ ul li a,a{
 .cart_product_lists {
 	width: 93%;
 	margin: 0 auto;
-	height: 400px;
-	overflow-y: scroll;
+	height: 250px;
+	overflow-y: scroll; 
+	scrollbar-width: none;
+	-ms-overflow-style: none; 
 }
+
+.cart_product_lists::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
 
 .order_calculate_popup {
 	position: absolute;
@@ -1105,6 +1112,21 @@ ul li a,a{
 	font-size: 12px;
 }
 
+.verify_area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	/* display: none; */
+	background-color: #D8E1DCF0;
+}
+
+.barcode_btn a {
+	background: linear-gradient(90deg, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
+}
+
 .barcode_area {
 	position: absolute;
 	top: 0;
@@ -1112,6 +1134,7 @@ ul li a,a{
 	width: 100%;
 	height: 100%;
 	z-index: 999999;
+	display: none;
 	background-color: #D8E1DCF0;
 }
 
@@ -1158,6 +1181,7 @@ ul li a,a{
 	color: #fff;
 }
 
+
 .barcode_title i {
 	color: #D8C100;
 	font-size: 22px;
@@ -1169,7 +1193,7 @@ ul li a,a{
 }
 
 .barcode_info {
-	margin-top: 55px;
+	margin-top: 0;
 }
 
 .barcode_back_btn button {  
@@ -1187,7 +1211,7 @@ ul li a,a{
 }
 
 .barcode_back_btn {
-	margin-top: 100px;
+	margin-top: 32px;
 	text-align: center;
 }
 

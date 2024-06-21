@@ -32,6 +32,14 @@ $(document).ready(function(){
 		$('.cart_product_popup_2').css({'bottom':'0'});   
 	});
 
+	$(document).on('click','.collection_barcode img ',function(){ 
+		$('.barcode_area').fadeIn();   
+	});
+
+	$(document).on('click','.barcode_back_btn button ',function(){ 
+		$('.barcode_area').fadeOut();   
+	});
+
 	$(document).on('click','.btn_back_popup',function(){ 
 		$('.cart_product_popup_2').show();   
 		$('.cart_product_popup_2').css({'bottom':'-192px'});  
