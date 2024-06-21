@@ -1196,6 +1196,10 @@ ul li a,a{
 	margin-top: 0;
 }
 
+.verify_area .barcode_info {
+	margin-top: 55px;
+}
+
 .barcode_back_btn button {  
 	background: #02EC78;
 	border: none;
