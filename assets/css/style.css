@@ -30,7 +30,7 @@ ul li a,a{
 
 .login_img {
 	width: 100%;
-	max-width: 377px;
+	max-width: 405px;
 	margin: 10px auto;
 }
 
@@ -47,7 +47,7 @@ ul li a,a{
 	background: #37474F;
 	position: absolute;
 	margin-top: 52px;
-	padding: 80px 0 35px 0;
+	padding: 80px 0 10px 0;
 	border-radius: 20px 20px 0 0;
 	width: 100%;
 	bottom: -100%;
@@ -642,7 +642,26 @@ ul li a,a{
 	justify-content: center;
 	align-items: center;
 	color: #000;
-	font-weight: 700;
+	font-weight: 400;
+}
+
+.order_collection_box {
+	margin-top: 50px;
+	height: 100vh;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+
+.order_collection_box::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+
+
+.collection_barcode img {
+	width: 38px;
 }
 
 .collection_product_top h4 {
@@ -671,14 +690,14 @@ ul li a,a{
 }
 
 .collection_barcode p {
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .collection_ex p {
 	background: #D8C100;
 	border-radius: 20px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: center;
 	padding: 0;
 	gap: 6px;
@@ -686,18 +705,32 @@ ul li a,a{
 	font-size: 14px;
 }
 
+.collection_product_top a span {
+	font-size: 20px !important;
+}
+
 .collection_ex p i {
 	font-size: 26px;
 }
 
 .order_collection_top_menu ul {
-	display: flex;
-	justify-content: flex-end;
+	display: flex; 
 	position: sticky; 
 	right: 0;
 	top: 0; 
 	z-index: 999;
 	gap: 10px;
+}
+
+.collection_barcode {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.btn_collection_green, .btn_collection_dark {
+	border-radius: 8px !important; 
+	font-weight: 400 !important;
 }
 
 .btn_collection_dark {
@@ -776,7 +809,7 @@ ul li a,a{
 }
 
 .order_collection_box {
-	margin-top: 55px;
+	margin-top: 32px;
 }
 
 .cart_product_popup {

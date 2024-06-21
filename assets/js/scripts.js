@@ -2,19 +2,15 @@ $(document).ready(function(){
 
 	$('html').removeAttr('class');
 	$('.login_form').css({'bottom':'0'});
-
-	// $(document).on('click','.right_content_item',function(){ 
-	// 	$('.right_hide_content').hide();
-	// 	$(this).find('.right_hide_content').show();
-	// });
  
+
 	$(document).on('click', '.right_content_item', function() {
         var $content = $(this).find('.right_hide_content');
         if ($content.is(':visible')) {
-            $content.hide();
+            $content.slideUp();
         } else {
-            $('.right_hide_content').hide(); // Hide all other content
-            $content.show();
+            $('.right_hide_content').slideUp();
+            $content.slideDown();
         }
     });
 

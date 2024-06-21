@@ -70,7 +70,7 @@
         width: 58px;
     }
     .collection_product_top h4 {
-        font-size: 14px; 
+        font-size: 12px;
     }
     .card_product_left p {
         font-size: 14px; 
@@ -99,6 +99,9 @@
     }
     .search_group_btn button { 
         font-size: 18px !important; 
+    }
+    .collection_ex p { 
+        font-size: 12px;
     }
 }
 
