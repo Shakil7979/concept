@@ -22,8 +22,24 @@ $(document).ready(function(){
 		$('.table_search_slide_box').css({'right':'-100%'});   
 	});
 
-	$(document).on('click','.card_add_more',function(){ 
+	$(document).on('click','.card_add_more',function(){  
+		$('.cart_product_popup').show();    
 		$('.cart_product_popup').css({'bottom':'0'});   
+		$('.cart_product_popup_2').hide();   
+	});
+
+	$(document).on('click','.btn_show_full_popup_2',function(){ 
+		$('.cart_product_popup_2').css({'bottom':'0'});   
+	});
+
+	$(document).on('click','.btn_back_popup',function(){ 
+		$('.cart_product_popup_2').show();   
+		$('.cart_product_popup_2').css({'bottom':'-192px'});  
+		$('.cart_product_popup').hide();    
+	});
+
+	$(document).on('click','.btn_back_popup_2',function(){  
+		$('.cart_product_popup_2').css({'bottom':'-192px'});  
 	});
 	
 	$(document).on('click','.for_for_card',function(){ 

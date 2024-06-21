@@ -659,9 +659,8 @@ ul li a,a{
 }
 
 
-
 .collection_barcode img {
-	width: 38px;
+	width: 38px !important;
 }
 
 .collection_product_top h4 {
@@ -693,6 +692,11 @@ ul li a,a{
 	font-size: 12px;
 }
 
+.cart_popup_box .btn_yellow {
+	padding: 6px 0;
+	border-radius: 20px;
+}
+
 .collection_ex p {
 	background: #D8C100;
 	border-radius: 20px;
@@ -706,7 +710,7 @@ ul li a,a{
 }
 
 .collection_product_top a span {
-	font-size: 20px !important;
+	font-size: 18px !important;
 }
 
 .collection_ex p i {
@@ -814,13 +818,34 @@ ul li a,a{
 
 .cart_product_popup {
 	position: absolute;
-	bottom: -500px;
+	bottom: -100%;
 	left: 0;
 	background: #37474F;
 	width: 100%;
 	z-index: 99999;
 	padding: 12px;
+	/* display: none; */
+	transition: 1s;
 	border-radius: 15px 15px 0 0;
+}
+
+.cart_product_popup_2 {
+	position: absolute;
+	bottom: -192px;
+	left: 0;
+	background: #37474F;
+	width: 100%;
+	z-index: 99999;
+	padding: 12px;
+	transition: 1s;
+	border-radius: 15px 15px 0 0;
+}
+
+.popup_box_text_box h4 {
+	color: #f3f4f4;
+	font-size: 16px;
+	margin-top: 42px;
+	font-weight: 700;
 }
 
 .cart_product_item {
@@ -834,14 +859,42 @@ ul li a,a{
 	justify-content: space-between;
 }
 
+
+.popup_box_text_box ul li p {
+	font-size: 16px;
+	color: #f3f4f4;  
+}
+
+.popup_box_text_box ul { 
+	margin: 10px 0;
+}
+
+.popup_black_box {
+	background: #263238;
+	border-radius: 10px;
+	padding: 12px;
+	display: flex;
+  	gap: 10px;
+}
+
+.popup_black_box i {
+	color: #D8C100;
+	transform: translateY(5px);
+}
+
+.popup_black_box p {
+	font-size: 13px;
+	color: #f3f4f4;  
+}
+
 .cart_product_item img {
-	width: 65px;
+	width: 55px;
 }
 
 .cart_quantity_count {
 	background: #01EB77;
 	padding: 5px 10px;
-	border-radius: 10px;
+	border-radius: 15px;
 	display: flex;
 	align-items: center;
 	gap: 6px;
@@ -849,10 +902,10 @@ ul li a,a{
 }
 
 .cart_product_item p {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 700;
 	text-align: right;
-} 	
+}
 
 .cart_popup_box {
 	display: flex;
@@ -919,6 +972,7 @@ ul li a,a{
 	padding: 1px 5px;
 	border-radius: 10px;
 	font-size: 14px;
+	font-weight: 700;
 }
 
 .cart_more_info {
@@ -961,7 +1015,11 @@ ul li a,a{
 	width: 66%;
 	height: 100%;
 	padding: 25px;
-	transition: 0.3s;
+	transition: 1s;
+}
+
+.card_product_left a {
+	border-radius: 15px;
 }
 
 .order_calculate_tap {
@@ -1007,9 +1065,11 @@ ul li a,a{
 	display: flex;
 	flex-wrap: wrap; 
 	gap: 8px;
+	justify-content: center;
 }
 
 .cal_dot {
+	color: #fff;
 	background: #263238 !important;
 }
 
