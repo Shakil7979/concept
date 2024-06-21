@@ -648,7 +648,7 @@ ul li a,a{
 
 .order_collection_box {
 	margin-top: 50px;
-	height: 100vh;
+	height: 90vh;
 	overflow-y: scroll;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
