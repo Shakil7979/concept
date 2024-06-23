@@ -191,7 +191,10 @@ ul li a,a{
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	padding-top: 60px;
+	box-shadow: 0 9px 10px #ddd;
 }
+
+
 
 .right_content_items::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
@@ -705,6 +708,7 @@ ul li a,a{
 	margin-top: 15px;
 	padding: 10px 10px;
 	border-radius: 15px;
+	box-shadow: 0 9px 10px #ddd;
 }
 
 .single_product_box img {
