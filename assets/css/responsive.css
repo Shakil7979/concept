@@ -139,6 +139,9 @@
     .right_content_box a {
         padding: 5px 4px; 
     }
+    .form_group button {
+        font-size: 16px; 
+    }
     .collection_product_top h4 {
         font-size: 10px;
     }

@@ -817,6 +817,12 @@ ul li a,a{
 	-ms-overflow-style: none;
 }
 
+.btn_green.btn_back_popup_2 {
+	background: -webkit-gradient(linear, left top, right top, from(rgba(1,165,84,1)), to(rgba(1,235,119,1)));
+	background: -o-linear-gradient(left, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
+	background: linear-gradient(90deg, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
+}
+
 
 .order_collection_box::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
