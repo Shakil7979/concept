@@ -357,7 +357,7 @@ ul li a,a{
 	display: flex;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-	        justify-content: center;
+	        justify-content: space-between;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -366,10 +366,21 @@ ul li a,a{
 	padding: 4px 10px;
 	font-weight: 700;
 	font-size: 14px;
+	height: 30px;
 }
 
 .btn_green:hover { 
 	color: #000;
+}
+
+.cart_popup_box .btn_green {
+	width: 89px;
+}
+
+.cart_popup_box .btn_yellow {
+	padding: 5px 8px;
+	border-radius: 20px;
+	width: 80px;
 }
 
 .bold_tag{
@@ -852,7 +863,7 @@ ul li a,a{
 
 .collection_product_bottom a {
 	width: 144px;
-	padding: 10px 0;
+	padding: 10px 8px;
 }
 
 .collection_barcode img { 
@@ -864,7 +875,7 @@ ul li a,a{
 }
 
 .cart_popup_box .btn_yellow {
-	padding: 6px 0;
+	padding: 5px 8px;
 	border-radius: 20px;
 }
 
@@ -1043,6 +1054,10 @@ ul li a,a{
 	-o-transition: 1s;
 	transition: 1s;
 	border-radius: 15px 15px 0 0;
+	max-width: 450px;
+	margin: 0 auto;
+	width: 100%;
+	right: 0;
 }
 
 .cart_product_popup_2 {
@@ -1072,6 +1087,10 @@ ul li a,a{
 	-o-transition: 1s;
 	transition: 1s;
 	border-radius: 15px 15px 0 0;
+	max-width: 450px;
+	margin: 0 auto;
+	width: 100%;
+	right: 0;
 }
 
 .popup_box_text_box h4 {
@@ -1235,9 +1254,15 @@ ul li a,a{
 	font-size: 12px;
 }
 
-.btn_green_order:hover,
-.btn_yellow:hover { 
+.btn_yellow {
+	color: #000;
+}
+
+.btn_green_order:hover{ 
 	color: #fff;
+}
+.btn_yellow:hover { 
+	color: #000;
 }
 
 .left_search_area ul {
