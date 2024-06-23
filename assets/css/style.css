@@ -1025,7 +1025,7 @@ ul li a,a{
 }
 
 .cart_product_popup {
-	position: absolute;
+	position: fixed;
 	bottom: -100%;
 	left: 0;
 	background: #37474F;
