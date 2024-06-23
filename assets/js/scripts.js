@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 	$('html').removeAttr('class');
 	$('.login_form').css({'bottom':'0'});
+
+	document.getElementById('dateInput').addEventListener('focus', function() {
+		this.showPicker();
+	});
  
 
 	$(document).on('click', '.right_content_item', function() {

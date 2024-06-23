@@ -1,3 +1,5 @@
+ 
+
 @media all and (max-width: 1199px){
 
 }
@@ -91,7 +93,8 @@
         font-size: 34px; 
     }
     .right_content_box ul {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 3px;
     }
     .barcode_title p {
@@ -111,6 +114,9 @@
     }
     .card_add_more i { 
         font-size: 26px;
+    }
+    .right_content_box a {
+        padding: 5px 6px; 
     }
     .right_content_box ul { 
         gap: 0px;
@@ -177,6 +183,37 @@
     .collection_product_top a { 
         width: 80px;
         padding: 1px 0; 
+    }
+    @-webkit-keyframes arrowUpDown {
+        0% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+        50% {
+            -webkit-transform: translateY(80px);
+                    transform: translateY(80px);
+        }
+        100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+    }
+    @keyframes arrowUpDown {
+        0% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+        50% {
+            -webkit-transform: translateY(80px);
+                    transform: translateY(80px);
+        }
+        100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+    }
+    .barcode_scanner { 
+        top: -80px; 
     }
 }
 
