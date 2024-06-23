@@ -599,6 +599,31 @@ ul li a,a{
 	background: #E04D38 !important;
 }
 
+.right_logo a {
+	font-size: 20px;
+	color: #000;
+	position: relative;
+	z-index: 9;
+}
+
+.right_logo a span {
+	font-weight: 700;
+}
+
+.right_logo_position{
+	position: relative;
+}
+
+.right_logo_position img {
+	width: 115px;
+	position: absolute;
+	right: 29px;
+	top: 0;
+	z-index: ;
+}
+
+
+
 .table_search_slide_box {
 	position: absolute;
 	top: 0;
@@ -610,7 +635,7 @@ ul li a,a{
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
-	z-index: 99;
+	z-index: 999999;
 }
 
 .barcode_product_with_scan img {
