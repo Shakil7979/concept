@@ -186,12 +186,41 @@ ul li a,a{
 }
 
 .right_content_items {
-	height: 100vh;
+	height: 91vh;
 	overflow-y: scroll;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	padding-top: 60px;
 	box-shadow: 0 9px 10px #ddd;
+}
+
+
+ /* Custom CSS for Flatpickr */
+ /* Custom CSS for Flatpickr */
+ .flatpickr-calendar {
+	border: 1px solid #02EC78;
+	z-index: 999999 !important; /* Ensure the calendar popup is on top */
+}
+.flatpickr-month {
+	background-color: #02EC78;
+	color: white;
+}
+.flatpickr-weekday {
+	background-color: #02EC78;
+	color: white;
+}
+.flatpickr-day.today, .flatpickr-day.selected {
+	background-color: #02EC78;
+	color: white;
+}
+.flatpickr-day:hover {
+	background-color: #02EC78;
+	color: white;
+}
+/* Ensure the input field is on top */
+.custom-date {
+	position: relative;
+	z-index: 1000000; /* Ensure the input is on top */
 }
 
 
@@ -313,6 +342,8 @@ ul li a,a{
 	font-weight: 700;
 	position: relative;
 }
+
+
 
 .search_order_green{ 
 	background: #02EC78;
@@ -656,6 +687,7 @@ input:focus-visible {
 	-o-transition: 1s;
 	transition: 1s;
 	z-index: 999999;
+	box-shadow: 0 56px 21px 20px #596571A8;
 }
 
 .barcode_product_with_scan img {
@@ -700,8 +732,7 @@ input:focus-visible {
 
 /* date type work or not for check  */
 
-.search_group input[type="date"] {
-	direction: ltr; /* This makes sure the date is entered left to right */
+.search_group input[type="date"] { 
 	text-align: right; /* Align text to the right */
 	padding-right: 10px; /* Adjust padding to make space for the icon */
 	position: relative;
@@ -721,8 +752,7 @@ input:focus-visible {
 	display: none;
 }
 
-.search_group input[type="date"] {
-	direction: ltr; /* Ensure the date is entered left to right */
+.search_group input[type="date"] { 
 	text-align: right; /* Align text to the right */
 	padding-right: 10px; /* Adjust padding to make space for the icon */
 	position: relative;
@@ -832,7 +862,7 @@ input:focus-visible {
 .btn_arrow_search_cart, .btn_arrow_search {
 	position: absolute;
 	left: -23px;
-	top: 57%;
+	top: 53%;
 	background: -webkit-gradient(linear, left top, right top, from(rgba(1,165,84,1)), to(rgba(1,235,119,1)));
 	background: -o-linear-gradient(left, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
 	background: linear-gradient(90deg, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
@@ -857,7 +887,7 @@ input:focus-visible {
 .btn_arrow_search_cart {
 	position: absolute;
 	left: -23px;
-	top: 57%;
+	top: 53%;
 	background: -webkit-gradient(linear, left top, right top, from(rgba(1,165,84,1)), to(rgba(1,235,119,1)));
 	background: -o-linear-gradient(left, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
 	background: linear-gradient(90deg, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
@@ -1228,6 +1258,7 @@ input:focus-visible {
 	margin: 0 auto;
 	width: 100%;
 	right: 0;
+	box-shadow: 0 -14px 18px #596571A8;
 }
 
 .cart_product_popup_2 {
@@ -1510,6 +1541,7 @@ input:focus-visible {
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
+	box-shadow: 0 56px 21px 20px #596571A8;
 }
 
 .card_product_left a {
@@ -1629,7 +1661,7 @@ input:focus-visible {
 	width: 100%;
 	height: 100%;
 	z-index: 999999;
-	/* display: none; */
+	display: none;
 	background-color: #D8E1DCF0;
 }
 
