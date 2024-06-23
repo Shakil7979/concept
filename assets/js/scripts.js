@@ -3,9 +3,16 @@ $(document).ready(function(){
 	$('html').removeAttr('class');
 	$('.login_form').css({'bottom':'0'});
 
-	document.getElementById('dateInput').addEventListener('focus', function() {
+	function showDatePicker() {
 		this.showPicker();
-	});
+	}
+
+	// Get the date input element
+	const dateInput = document.getElementById('dateInput');
+
+	// Add both focus and click event listeners
+	dateInput.addEventListener('focus', showDatePicker);
+	dateInput.addEventListener('click', showDatePicker);
  
 
 	$(document).on('click', '.right_content_item', function() {
@@ -20,10 +27,18 @@ $(document).ready(function(){
 
 	$(document).on('click','.search_order',function(){ 
 		$('.table_search_slide_box').css({'right':'0'});   
+		$('.overlay_click_hide_search').fadeIn();   
 	});
 
 	$(document).on('click','.btn_arrow_search',function(){ 
+		$('.table_search_slide_box').css({'right':'-100%'});    
+		$('.overlay_click_hide_search').fadeOut();   
+	});
+
+	$(document).on('click','.overlay_click_hide_search',function(){ 
 		$('.table_search_slide_box').css({'right':'-100%'});   
+		$('.order_calculate_popup').css({'right':'-100%'});   
+		$('.overlay_click_hide_search').fadeOut();   
 	});
 
 	$(document).on('click','.card_add_more',function(){   
@@ -63,12 +78,14 @@ $(document).ready(function(){
 	
 	$(document).on('click','.for_for_card',function(){ 
 		$('.order_calculate_popup').css({'right':'0'});   
+		$('.overlay_click_hide_search').fadeIn();   
 
 		return false;
 	});
 
 	$(document).on('click','.btn_arrow_search_cart',function(){ 
-		$('.order_calculate_popup').css({'right':'-100%'});   
+		$('.order_calculate_popup').css({'right':'-100%'});    
+		$('.overlay_click_hide_search').fadeOut();  
 	});
 
 	$('.search_order, .search_order_red, .search_order_yellow, .search_order_green').hover(
