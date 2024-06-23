@@ -1723,6 +1723,9 @@ ul li a,a{
 	display: none;
 }
 
+button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visible, [type="submit"]:focus-visible {
+	outline: none;
+}
 
 
 /*======================  End Page  ======================*/
