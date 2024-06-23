@@ -1727,6 +1727,9 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	outline: none;
 }
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    outline: none;
+}
 
 /*======================  End Page  ======================*/
 
