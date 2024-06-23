@@ -113,6 +113,9 @@
     .login_img { 
         max-width: 198px; 
     }
+    .card_product_left p {
+        font-size: 14px;
+    }
     .card_add_more i { 
         font-size: 26px;
     }
