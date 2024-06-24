@@ -11,16 +11,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM fully loaded and parsed");
-    flatpickr("#datePicker", {
-        dateFormat: "Y-m-d",
-        onReady: function(selectedDates, dateStr, instance) {
-            console.log("Flatpickr is ready");
+document.addEventListener('DOMContentLoaded', function() {
+    var picker = new Pikaday({
+        field: document.getElementById('datepicker'),
+        format: 'ddd MMM DD YYYY', // Format for displaying the date in the input field
+        toString(date, format) {
+            // Format the date to 'MM/DD/YYYY' when selected
+            const day = date.getDate();
+            const month = date.getMonth() + 1; // Month is zero-based
+            const year = date.getFullYear();
+            return `${month}/${day}/${year}`;
+        },
+        onSelect: function(date) {
+            // Optional: Log the selected date in console
+            console.log('Selected date: ' + picker.toString(date));
         }
     });
 });
+
+
 
 
 
@@ -36,11 +45,11 @@ $(document).ready(function(){
 	}
 
 	// Get the date input element
-	const dateInput = document.getElementById('dateInput');
+	// const dateInput = document.getElementById('dateInput');
 
-	// Add both focus and click event listeners
-	dateInput.addEventListener('focus', showDatePicker);
-	dateInput.addEventListener('click', showDatePicker);
+	// // Add both focus and click event listeners
+	// dateInput.addEventListener('focus', showDatePicker);
+	// dateInput.addEventListener('click', showDatePicker);
  
 
 	$(document).on('click', '.right_content_item', function() {

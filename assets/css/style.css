@@ -195,33 +195,46 @@ ul li a,a{
 }
 
 
- /* Custom CSS for Flatpickr */
- /* Custom CSS for Flatpickr */
- .flatpickr-calendar {
-	border: 1px solid #02EC78;
-	z-index: 999999 !important; /* Ensure the calendar popup is on top */
-}
-.flatpickr-month {
-	background-color: #02EC78;
-	color: white;
-}
-.flatpickr-weekday {
-	background-color: #02EC78;
-	color: white;
-}
-.flatpickr-day.today, .flatpickr-day.selected {
-	background-color: #02EC78;
-	color: white;
-}
-.flatpickr-day:hover {
-	background-color: #02EC78;
-	color: white;
-}
-/* Ensure the input field is on top */
+/* Optional: Customize input field style */
 .custom-date {
-	position: relative;
-	z-index: 1000000; /* Ensure the input is on top */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
 }
+
+/* Optional: Customize Pikaday calendar container */
+.pika-single {
+    z-index: 999999 !important;
+}
+ 
+
+.is-selected .pika-button, .has-event .pika-button {
+    color: #fff;
+    font-weight: bold;
+    background: #02EC78;
+    box-shadow: inset 0 1px 3px #02EC78;
+    border-radius: 3px;
+}
+
+.is-today .pika-button {
+    color: #02EC78;
+    font-weight: bold;
+}
+
+.pika-button:hover, .pika-row.pick-whole-week:hover .pika-button {
+    color: #fff;
+    background: #02EC78;  
+}
+
+
+
+
+
+
+
+
 
 
 
