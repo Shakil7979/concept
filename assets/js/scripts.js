@@ -11,23 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var picker = new Pikaday({
-        field: document.getElementById('datepicker'),
-        format: 'ddd MMM DD YYYY', // Format for displaying the date in the input field
-        toString(date, format) {
-            // Format the date to 'MM/DD/YYYY' when selected
-            const day = date.getDate();
-            const month = date.getMonth() + 1; // Month is zero-based
-            const year = date.getFullYear();
-            return `${month}/${day}/${year}`;
-        },
-        onSelect: function(date) {
-            // Optional: Log the selected date in console
-            console.log('Selected date: ' + picker.toString(date));
-        }
-    });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var picker = new Pikaday({
+//         field: document.getElementById('datepicker'),
+//         format: 'ddd MMM DD YYYY', // Format for displaying the date in the input field
+//         toString(date, format) {
+//             // Format the date to 'MM/DD/YYYY' when selected
+//             const day = date.getDate();
+//             const month = date.getMonth() + 1; // Month is zero-based
+//             const year = date.getFullYear();
+//             return `${month}/${day}/${year}`;
+//         },
+//         onSelect: function(date) {
+//             // Optional: Log the selected date in console
+//             console.log('Selected date: ' + picker.toString(date));
+//         }
+//     });
+// });
 
 
 
@@ -45,12 +45,21 @@ $(document).ready(function(){
 	}
 
 	// Get the date input element
-	// const dateInput = document.getElementById('dateInput');
+	const dateInput = document.getElementById('dateInput');
 
-	// // Add both focus and click event listeners
-	// dateInput.addEventListener('focus', showDatePicker);
-	// dateInput.addEventListener('click', showDatePicker);
+	// Add both focus and click event listeners
+	dateInput.addEventListener('focus', showDatePicker);
+	dateInput.addEventListener('click', showDatePicker);
  
+
+	$(document).on('click', '.verify_code li p', function() {
+        $('.verify_code li p').removeClass('active'); 
+        $(this).addClass('active'); 
+    });
+
+	$(document).on('click', '.barcode_btn a, .verify_area_overlay', function() {
+        $('.verify_area').fadeOut();  
+    });
 
 	$(document).on('click', '.right_content_item', function() {
         var $content = $(this).find('.right_hide_content');
@@ -89,12 +98,14 @@ $(document).ready(function(){
 		$('.overlay_click_hide_search').fadeOut();    
 		$('.search_order').css({'background':'#263238'}); 
 		$('.cart_product_popup_3').show();    
+		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.right_content_footer').show();    
 	});
 
 	$(document).on('click','.card_add_more',function(){   
 		$('.cart_product_popup').css({'bottom':'0'});   
 		$('.card_popup_first_tab').show();   
+		$('.overlay_click_hide_search').fadeIn();    
 		$('.card_popup_second_tab').hide();   
 		$('.cart_product_popup_3').fadeOut();   
 		$('.card_add_more button i').css({'color':'#949DA1'});
@@ -104,6 +115,7 @@ $(document).ready(function(){
 		$('.cart_product_popup').css({'bottom':'0'});   
 		$('.card_popup_first_tab').hide();  
 		$('.card_popup_second_tab').show();  
+		$('.overlay_click_hide_search').fadeIn();    
 		$('.cart_product_popup_3').fadeOut();  
 		$('.card_add_more button i').css({'color':'#fff'});
 	});
