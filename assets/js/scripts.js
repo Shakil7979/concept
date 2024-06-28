@@ -97,6 +97,7 @@ $(document).ready(function(){
 		$('.order_calculate_popup').css({'right':'-100%'});   
 		$('.overlay_click_hide_search').fadeOut();    
 		$('.search_order').css({'background':'#263238'}); 
+		$('.card_add_more button i').css({'color':'#fff'}); 
 		$('.cart_product_popup_3').show();    
 		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.right_content_footer').show();    

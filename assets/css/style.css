@@ -1573,6 +1573,23 @@ input:focus-visible {
 	box-shadow: 0 56px 21px 20px #596571A8;
 }
 
+.site_menu_popup {
+	position: absolute;
+	top: 0;
+	background: #37474F;
+	right: 0%;
+	width: 66%;
+	height: 100%;
+	padding: 25px;
+	z-index: 999999;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	box-shadow: 0 56px 21px 20px #596571A8;
+}
+
+
+
 .card_product_left a {
 	border-radius: 15px;
 }
