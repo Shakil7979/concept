@@ -25,6 +25,12 @@
     }
 }
 
+@media all and (max-width: 440px){
+    
+    .order_calculate_btn { 
+        width: 85%;
+    }
+}
 @media all and (max-width: 432px){
     .order_calculate_btn ul li button { 
         width: 53px;
@@ -32,6 +38,9 @@
     }
     .card_product_left p {
         font-size: 14px; 
+    }
+    .cart_scan_box_left button { 
+        height: 117px; 
     }
 }
 @media all and (max-width: 415px){
@@ -148,6 +157,9 @@
     }
     .form_group button {
         font-size: 16px; 
+    }
+    .cart_scan_box_left button {
+        height: 102px;
     }
     .collection_product_top h4 {
         font-size: 10px;

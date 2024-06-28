@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <title>Add Stock</title>
+        <link rel="icon" href="assets/images/favicon.png">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <!-- Normalize --> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body class="order_list_body" dir="rtl"> 
+
+        
+        <div class="main_container"> 
+
+            <div class="overlay_click_hide_search"></div>
+            
+            <!--=====================  Start Header Area  ====================--> 
+            <div class="order_list_area"> 
+                <div class="add_stock_main after_scan_stock ">
+                    <div class="add_stock_scan_box">
+                        <div class="add_stock_scanner_text">
+                            <h4>טחינה אתיופית משק אחיה 1 ק”ג טחינה
+                                אתיופית משק אחיה 1 ק”ג</h4>
+                            <div class="add_st_scanner">
+                                <img class="scan_scanner" src="assets/images/stock/scanner.png" alt="">
+                                <img class="scan_product" src="assets/images/stock/scan_product.png" alt="">
+                                <span class="barcode_scanner"></span>
+                            </div> 
+                        </div> 
+                        <div class="after_scan_stock_price">
+                            <div class="after_scan_last">
+                                <sub>00</sub>
+                                <p>15</p>
+                                <span>₪</span>
+                            </div>
+                            <span class="border_virticle"></span>
+                            <div class="after_scan_middle">
+                                <img src="assets/images/collection/barcode.png" alt="">
+                                <p>123412121 52345345</p>
+                            </div>
+                            <span class="border_virticle"></span>
+                            <div class="scan_after_first">
+                                <a href="#" class="btn_red">234 <span>ק”ג</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_stock_input add_stock_after_scan">
+                        <a href="#">ברקוד אינו תקין או חסר?</a> 
+                        <div class="add_stock_input_group add_stock_after_scan">
+                            <input type="text" placeholder="11285">
+                            <button class="add_btn_stock btn_green">עדכן<i class="fa-solid fa-arrow-left"></i>  </button>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="right_content"> 
+                    
+                </div>
+                <div class="left_search_area">
+                    <ul>
+                        <li><a href="#"><img src="assets/images/login.png" alt=""></a></li>
+                        <li><a href="#"><span class="search_order"><i class="fa-solid fa-magnifying-glass"></i></span></a></li> 
+                        <li><a href="#"><span class="search_order_red">8 <span class="side_tooltip_1">tooltip</span></span></a></li> 
+                        <li><a href="#"><span class="search_order_yellow search_show_10">2 <span class="side_tooltip_2">tooltip</span></span></a></li> 
+                        <li><a href="#"><span class="search_order_green">4 <span class="side_tooltip_3">tooltip</span></span></a></li> 
+                    </ul>
+                </div>
+            </div> 
+
+            <div class="right_content_footer">
+                <img src="assets/images/footer_logo.png" alt="">
+                <p>אפליקציית ליקוט מבית</p>
+            </div> 
+
+            
+            <div class="cart_scan_calculate"> 
+                <div class="cart_scan_box_cal_flex">
+                    <div class="cart_scan_box_cal">
+                        <div class="order_calculate_btn">
+                            <ul>
+                                <li><button>3</button></li>
+                                <li><button>2</button></li>
+                                <li><button>1</button></li>
+                                
+                                <li><button>6</button></li>
+                                <li><button>5</button></li>
+                                <li><button>4</button></li>
+                                
+                                <li><button>9</button></li>
+                                <li><button>8</button></li>
+                                <li><button>7</button></li>
+                                
+                                <li><button class="cal_dot">-</button></li>
+                                <li><button>0</button></li>
+                                <li><button class="cal_dot">.</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cart_scan_box_left">
+                        <button class="btn_green">ללא
+                            הגבלה</button>
+                        <button class="btn_red">חסר
+                            במלאי</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--=====================  End Header Area  ====================-->
+        </div>
+ 
+
+
+        <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~-->
+        <!-- jQuery -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+        <!-- Modernizr -->
+        <script src="assets/js/modernizr-3.11.2.min.js"></script>
+        <!-- Custom JS (Handed)-->
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
+
+
+

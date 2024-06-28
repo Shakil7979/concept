@@ -36,12 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function(){
 
 	setTimeout(function(){
-		$('.add_stock_input_group').fadeOut();
+		$('.add_stock_input_group_input_script').fadeOut();
 		$('.add_stock_select').fadeIn();
-		$('.barcode_scanner').css({'width':'100%','top':'-2%','animation':'inherit'});
+		$('.barcode_scan_bxx .barcode_scanner').css({'width':'100%','top':'-2%','animation':'inherit'});
 	}, 3000);
-
-	
 
 	$('html').removeAttr('class');
 	$('.login_form').css({'bottom':'0'});
