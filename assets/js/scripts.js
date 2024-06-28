@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function(){
 
+	setTimeout(function(){
+		$('.add_stock_input_group').fadeOut();
+		$('.add_stock_select').fadeIn();
+		$('.barcode_scanner').css({'width':'100%','top':'-2%','animation':'inherit'});
+	}, 3000);
+
 	
 
 	$('html').removeAttr('class');

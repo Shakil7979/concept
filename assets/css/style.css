@@ -1588,7 +1588,7 @@ input:focus-visible {
 	transition: 1s;
 	box-shadow: 0 56px 21px 20px #596571A8;
 }
- 
+
   
 
 .card_product_left a {
@@ -1925,6 +1925,10 @@ input:focus-visible {
 	        animation: arrowUpDown 4s infinite;
 }
 
+.add_st_scanner .barcode_scanner{ 
+	width: 95%;
+}
+
 
 @-webkit-keyframes arrowUpDown {
     0% {
@@ -2015,9 +2019,128 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	top: 8px;
 }
 
+ 
+.add_st_scanner{
+	position: relative;
+}
+.add_st_scanner img {
+	width: 100%;
+}
 
+.add_stock_scanner_text {
+	width: 100%;
+	max-width: 65%;
+	margin: 56px auto;
+}
+ 
+  .add_stock_scanner_text h3 {
+	font-size: 30px;
+	color: rgb(38, 50, 56);
+	line-height: 1.2;
+	text-align: center;
+	margin: 14px 0;
+}
+ 
+ 
+.add_stock_input h3 {
+	font-size: 25px;
+	color: rgb(38, 50, 56);
+	line-height: 1.2;
+	text-align: center;
+	margin: 14px 0;
+	margin-left: 45px;
+}
 
+.add_stock_input_group input {
+	width: 100%;
+}
 
+.add_stock_input_group{
+	position: relative;
+}
+
+.add_stock_input{ 
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.add_stock_input {
+	width: 88%;
+	position: absolute; 
+	left: 0;
+	right: 0;
+	top: 40%;
+	margin: 0 auto;
+	z-index: 999;
+}
+
+.add_stock_main {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	right: 0;
+	z-index: 99;
+}
+
+.add_stock_input_group input {
+	width: 100%;
+	box-shadow: 0px 0px 76px 0px rgba(38, 50, 56, 0.35);
+	background: #fff;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 17px;
+	height: 35px;
+}
+
+.add_btn_stock.btn_green {
+	position: absolute;
+	border: none;
+	left: 0;
+	top: 0;
+	height: 35px;
+	background: linear-gradient(90deg, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%);
+	/* color: #fff; */
+	font-weight: 300;
+}
+  
+.add_stock_select {
+	border-radius: 17px;
+	box-shadow: 0px 0px 76px 0px rgba(38, 50, 56, 0.35);
+	background: #fff;
+	padding: 2px;
+	position: relative;
+	display: none;
+}
+ 
+.add_stock_select ul li p {
+	font-size: 14px; 
+}
+  
+.add_stock_select ul li {
+	display: flex;
+	justify-content: space-between;
+	padding: 2px 8px;
+}
+
+.add_stock_select ul li > span {
+	font-size: 14px;
+	color: #e04d38;
+}
+
+.add_stock_select ul li p span {
+	font-weight: 700;
+}
+
+.add_slect_p {
+	margin-bottom: 10px;
+	padding-top: 8px;
+}
+
+.add_stock_select ul li.active ,
+.add_stock_select ul li:hover { 
+	background: #e0e0e0;
+} 
 
 
 /*======================  End Page  ======================*/
