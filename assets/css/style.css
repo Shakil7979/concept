@@ -2054,7 +2054,7 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 }
  
   .add_stock_scanner_text h3 {
-	font-size: 30px;
+	font-size: 32px;
 	color: rgb(38, 50, 56);
 	line-height: 1.2;
 	text-align: center;
@@ -2295,7 +2295,7 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	width: 100%;
 	border-radius: inherit;
 	border: none;
-	height: 130px;
+	height: 99px;
 	text-align: center !important;
 	display: flex;
 	justify-content: center;
@@ -2310,6 +2310,11 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	flex-direction: column;
 	gap: 5px;
 	justify-content: space-between;
+}
+
+.cart_scan_box_cal_flex .order_calculate_btn ul li button {
+	height: 44px;
+	font-size: 25px; 
 }
 
 /*======================  End Page  ======================*/

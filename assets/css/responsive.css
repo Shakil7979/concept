@@ -38,10 +38,7 @@
     }
     .card_product_left p {
         font-size: 14px; 
-    }
-    .cart_scan_box_left button { 
-        height: 117px; 
-    }
+    } 
 }
 @media all and (max-width: 415px){
     .order_calculate_btn { 
@@ -158,9 +155,9 @@
     .form_group button {
         font-size: 16px; 
     }
-    .cart_scan_box_left button {
-        height: 102px;
-    }
+    .site_input_group input { 
+        font-size: 14px;
+    } 
     .collection_product_top h4 {
         font-size: 10px;
     }
@@ -257,6 +254,22 @@
     }
     .cart_popup_box .btn_yellow {
         padding: 4px 5px; 
+    }
+    .add_stock_main.after_scan_stock {
+        left: 59px;
+    }
+    .scan_after_first a { 
+        gap: 6px; 
+        width: 65px;
+    }
+    .after_scan_middle img {
+        width: 36px;
+    }
+    .after_scan_middle p {
+        font-size: 10px;
+    }
+    .after_scan_last p { 
+        font-size: 16px;
     }
     .right_content_item p {
         font-size: 10px;
