@@ -888,6 +888,7 @@ input:focus-visible {
 	accent-color: #02EC78;
 }
 
+.btn_arrow_search_cart2,
 .btn_arrow_search_cart, .btn_arrow_search {
 	position: absolute;
 	left: -23px;
@@ -1577,7 +1578,7 @@ input:focus-visible {
 	position: absolute;
 	top: 0;
 	background: #37474F;
-	right: 0%;
+	right: -100%;
 	width: 66%;
 	height: 100%;
 	padding: 25px;
@@ -1587,8 +1588,8 @@ input:focus-visible {
 	transition: 1s;
 	box-shadow: 0 56px 21px 20px #596571A8;
 }
-
-
+ 
+  
 
 .card_product_left a {
 	border-radius: 15px;
@@ -1972,6 +1973,52 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     outline: none;
 }
+
+.site_menu_title h3 {
+	font-size: 22px; 
+	color: rgb(224, 224, 224);
+	line-height: 1.2; 
+	margin-bottom: 5px;
+}
+
+
+.site_menu_title h3 span {
+	color: #02EC78;
+}
+
+.site_input_group{
+	position: relative;
+}
+
+.site_input_group input {
+	width: 100%;
+	margin-bottom: 11px;
+	background: #263238;
+	border: none;
+	padding: 9px 10px;
+	border-radius: 25px;
+	color: #495053;
+}
+ 
+  
+.first_site_menu_field {
+	background: linear-gradient(90deg, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%) !important;
+	box-shadow: 0px 0px 76px 0px rgba(38, 50, 56, 0.35);
+	color: #000 !important;
+	font-weight: 700;
+}
+
+.site_input_group img {
+	position: absolute;
+	left: 11px;
+	width: 25px;
+	top: 8px;
+}
+
+
+
+
+
 
 /*======================  End Page  ======================*/
 

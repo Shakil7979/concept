@@ -101,6 +101,7 @@ $(document).ready(function(){
 		$('.cart_product_popup_3').show();    
 		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.right_content_footer').show();    
+		$('.site_menu_popup').css({'right':'-100%'});   
 	});
 
 	$(document).on('click','.card_add_more',function(){   
@@ -156,6 +157,20 @@ $(document).ready(function(){
 		$('.overlay_click_hide_search').fadeOut();  
 		$('.cart_product_popup_3').show();    
 		$('.right_content_footer').show();   
+	});
+
+	$(document).on('click','.btn_arrow_search_cart2',function(){ 
+		$('.site_menu_popup').css({'right':'-100%'});    
+		$('.overlay_click_hide_search').fadeOut();  
+		$('.cart_product_popup_3').show();    
+		$('.right_content_footer').show();    
+	});
+
+	$(document).on('click','.search_show_10',function(){ 
+		$('.site_menu_popup').css({'right':'0%'});    
+		$('.overlay_click_hide_search').fadeIn();  
+		$('.cart_product_popup_3').hide();    
+		$('.right_content_footer').hide();    
 	});
 
 	$('.search_order, .search_order_red, .search_order_yellow, .search_order_green').hover(
