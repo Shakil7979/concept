@@ -170,7 +170,6 @@ $(document).ready(function(){
 	// });
 
 	// check swipe code 
-
 	function showCartPopup() {
 		$('.cart_product_popup').css({'bottom':'0'});   
 		$('.card_popup_first_tab').show();   
@@ -219,6 +218,7 @@ $(document).ready(function(){
 			}
 		}
 	});
+	
 	
 
 	// check swipe code 
