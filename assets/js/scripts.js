@@ -85,35 +85,50 @@ $(document).ready(function(){
 		$('.cart_product_popup').css({'bottom':'-100%'}); 
 		$('.search_order').css({'background':'#5c7480'});
 	}
-
+	
+	function hideSlideBox() {
+		$('.table_search_slide_box').css({'right':'-100%'});   
+		$('.overlay_click_hide_search').fadeOut();    
+		$('.cart_product_popup_3').show();    
+		$('.right_content_footer').show();    
+		$('.cart_product_popup').css({'bottom':'0'}); 
+		$('.search_order').css({'background':'#5c7480'}); 
+	}
+	
 	$(document).on('click', '.search_order', function() { 
 		showSlideBox();
 	});
-
+	
 	// Swipe detection
 	var startX, startY, endX, endY;
-
+	
 	$('body').on('touchstart', function(event) {
 		var touch = event.touches[0];
 		startX = touch.pageX;
 		startY = touch.pageY;
 	});
-
+	
 	$('body').on('touchmove', function(event) {
 		var touch = event.touches[0];
 		endX = touch.pageX;
 		endY = touch.pageY;
 	});
-
+	
 	$('body').on('touchend', function(event) {
 		var deltaX = startX - endX;
 		var deltaY = startY - endY;
-
-		if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX > 50) {
-			// Right to left swipe detected
-			showSlideBox();
+	
+		if (Math.abs(deltaX) > Math.abs(deltaY)) {
+			if (deltaX > 50) {
+				// Right to left swipe detected
+				showSlideBox();
+			} else if (deltaX < -50) {
+				// Left to right swipe detected
+				hideSlideBox();
+			}
 		}
 	});
+	
 
 	// check for swipe 
 
@@ -156,7 +171,6 @@ $(document).ready(function(){
 
 	// check swipe code 
 
-
 	function showCartPopup() {
 		$('.cart_product_popup').css({'bottom':'0'});   
 		$('.card_popup_first_tab').show();   
@@ -165,36 +179,36 @@ $(document).ready(function(){
 		$('.cart_product_popup_3').fadeOut();   
 		$('.card_add_more button i').css({'color':'#949DA1'});
 	}
-
+	
 	function hideCartPopup() {
 		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.overlay_click_hide_search').fadeOut();   
 		$('.card_add_more button i').css({'color':''});
 	}
-
+	
 	$(document).on('click', '.card_add_more', function() { 
 		showCartPopup();
 	});
-
+	
 	// Swipe detection
 	var startX, startY, endX, endY;
-
-	$('body').on('touchstart', function(event) {
+	
+	$('.cart_product_popup_3').on('touchstart', function(event) {
 		var touch = event.touches[0];
 		startX = touch.pageX;
 		startY = touch.pageY;
 	});
-
-	$('body').on('touchmove', function(event) {
+	
+	$('.cart_product_popup_3').on('touchmove', function(event) {
 		var touch = event.touches[0];
 		endX = touch.pageX;
 		endY = touch.pageY;
 	});
-
-	$('body').on('touchend', function(event) {
+	
+	$('.cart_product_popup_3').on('touchend', function(event) {
 		var deltaX = startX - endX;
 		var deltaY = startY - endY;
-
+	
 		if (Math.abs(deltaY) > Math.abs(deltaX)) {
 			if (deltaY > 50) {
 				// Bottom to top swipe detected
@@ -205,6 +219,7 @@ $(document).ready(function(){
 			}
 		}
 	});
+	
 
 	// check swipe code 
 
