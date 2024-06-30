@@ -255,6 +255,9 @@
     .content_order_item_name h4 {
         font-size: 10px;
     }
+    .verify_area .btn_green {
+        width: 95px; 
+    }
     .cart_popup_box .btn_yellow {
         padding: 4px 5px; 
     }
