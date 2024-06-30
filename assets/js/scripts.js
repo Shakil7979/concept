@@ -170,6 +170,7 @@ $(document).ready(function(){
 	// });
 
 	// check swipe code 
+	
 	function showCartPopup() {
 		$('.cart_product_popup').css({'bottom':'0'});   
 		$('.card_popup_first_tab').show();   
@@ -190,34 +191,25 @@ $(document).ready(function(){
 	});
 	
 	// Swipe detection
-	var startX, startY, endX, endY;
+	var startY, endY;
 	
 	$('.cart_product_popup_3').on('touchstart', function(event) {
 		var touch = event.touches[0];
-		startX = touch.pageX;
 		startY = touch.pageY;
 	});
 	
-	$('.cart_product_popup_3').on('touchmove', function(event) {
-		var touch = event.touches[0];
-		endX = touch.pageX;
-		endY = touch.pageY;
-	});
-	
 	$('.cart_product_popup_3').on('touchend', function(event) {
-		var deltaX = startX - endX;
-		var deltaY = startY - endY;
+		var touch = event.changedTouches[0];
+		endY = touch.pageY;
 	
-		if (Math.abs(deltaY) > Math.abs(deltaX)) {
-			if (deltaY > 50) {
-				// Bottom to top swipe detected
-				showCartPopup();
-			} else if (deltaY < -50) {
-				// Top to bottom swipe detected
-				hideCartPopup();
-			}
+		var deltaY = endY - startY;
+	
+		if (deltaY < -50) {
+			// Top to bottom swipe detected
+			hideCartPopup();
 		}
 	});
+	
 	
 	
 
