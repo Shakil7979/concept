@@ -73,16 +73,7 @@ $(document).ready(function(){
             $('.right_hide_content').slideUp();
             $content.slideDown();
         }
-    });
-
-	// $(document).on('click','.search_order',function(){ 
-	// 	$('.table_search_slide_box').css({'right':'0'});   
-	// 	$('.overlay_click_hide_search').fadeIn();    
-	// 	$('.cart_product_popup_3').hide();    
-	// 	$('.right_content_footer').hide();    
-	// 	$('.cart_product_popup').css({'bottom':'-100%'}); 
-	// 	$(this).css({'background':'#5c7480'}); 
-	// });
+    }); 
 
 	// check for swipe 
 
@@ -128,7 +119,7 @@ $(document).ready(function(){
 
 
 
-	
+
 
 	$(document).on('click','.btn_printer_on',function(){ 
 		$('.verify_area').show();     
@@ -154,14 +145,57 @@ $(document).ready(function(){
 		$('.site_menu_popup').css({'right':'-100%'});   
 	});
 
-	$(document).on('click','.card_add_more',function(){   
+	// $(document).on('click','.card_add_more',function(){   
+	// 	$('.cart_product_popup').css({'bottom':'0'});   
+	// 	$('.card_popup_first_tab').show();   
+	// 	$('.overlay_click_hide_search').fadeIn();    
+	// 	$('.card_popup_second_tab').hide();   
+	// 	$('.cart_product_popup_3').fadeOut();   
+	// 	$('.card_add_more button i').css({'color':'#949DA1'});
+	// });
+
+	// check swipe code 
+
+
+	function showCartPopup() {
 		$('.cart_product_popup').css({'bottom':'0'});   
 		$('.card_popup_first_tab').show();   
 		$('.overlay_click_hide_search').fadeIn();    
 		$('.card_popup_second_tab').hide();   
 		$('.cart_product_popup_3').fadeOut();   
 		$('.card_add_more button i').css({'color':'#949DA1'});
+	}
+
+	$(document).on('click', '.card_add_more', function() { 
+		showCartPopup();
 	});
+
+	// Swipe detection
+	var startX, startY, endX, endY;
+
+	$('body').on('touchstart', function(event) {
+		var touch = event.touches[0];
+		startX = touch.pageX;
+		startY = touch.pageY;
+	});
+
+	$('body').on('touchmove', function(event) {
+		var touch = event.touches[0];
+		endX = touch.pageX;
+		endY = touch.pageY;
+	});
+
+	$('body').on('touchend', function(event) {
+		var deltaX = startX - endX;
+		var deltaY = startY - endY;
+
+		if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY > 50) {
+			// Bottom to top swipe detected
+			showCartPopup();
+		}
+	});
+
+	// check swipe code 
 
 	$(document).on('click','.btn_show_full_popup_2',function(){  
 		$('.cart_product_popup').css({'bottom':'0'});   
