@@ -295,6 +295,14 @@ ul li a,a{
 	font-size: 12px;
 	color: #fff;
 }
+.add_st_scanner.barcode_product_with_scan {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.barcode_product_with_scan .scan_product {
+	width: 35% !important; 
+}
 
 .order_list_area {
 	padding: 5px;
