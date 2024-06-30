@@ -166,6 +166,12 @@ $(document).ready(function(){
 		$('.card_add_more button i').css({'color':'#949DA1'});
 	}
 
+	function hideCartPopup() {
+		$('.cart_product_popup').css({'bottom':'-100%'});   
+		$('.overlay_click_hide_search').fadeOut();   
+		$('.card_add_more button i').css({'color':''});
+	}
+
 	$(document).on('click', '.card_add_more', function() { 
 		showCartPopup();
 	});
@@ -189,9 +195,14 @@ $(document).ready(function(){
 		var deltaX = startX - endX;
 		var deltaY = startY - endY;
 
-		if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY > 50) {
-			// Bottom to top swipe detected
-			showCartPopup();
+		if (Math.abs(deltaY) > Math.abs(deltaX)) {
+			if (deltaY > 50) {
+				// Bottom to top swipe detected
+				showCartPopup();
+			} else if (deltaY < -50) {
+				// Top to bottom swipe detected
+				hideCartPopup();
+			}
 		}
 	});
 
