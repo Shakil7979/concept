@@ -46,7 +46,7 @@ ul li a,a{
 
 .login_form {
 	background: #37474F;
-	position: absolute;
+	position: fixed;
 	margin-top: 52px;
 	padding: 80px 0 10px 0;
 	border-radius: 20px 20px 0 0;
@@ -298,6 +298,7 @@ ul li a,a{
 
 .order_list_area {
 	padding: 5px;
+	overflow: hidden;
 }
 
 .right_content_item {
@@ -1102,6 +1103,7 @@ input:focus-visible {
 
 .collection_barcode p {
 	font-size: 12px;
+	color: #000;
 }
 
 .cart_popup_box .btn_yellow {
@@ -1147,6 +1149,7 @@ input:focus-visible {
 }
 
 .collection_barcode {
+	align-items: end;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1661,6 +1664,7 @@ input:focus-visible {
 	height: 60px;
 	font-size: 40px;
 	font-weight: 900;
+	color: #000;
 }
 
 .order_calculate_btn ul {
@@ -1983,6 +1987,7 @@ input:focus-visible {
 
 .cart_quantity_count button i {
 	font-size: 22px;
+	color: #000;
 }
 
 .card_popup_first_tab,

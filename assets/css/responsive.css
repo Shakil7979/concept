@@ -152,6 +152,9 @@
     .right_content_box a {
         padding: 5px 4px; 
     }
+    .order_collection_box { 
+        height: 85vh; 
+    }
     .form_group button {
         font-size: 16px; 
     }
@@ -357,5 +360,15 @@
     }
     .right_content_box a {
         padding: 5px 3px;
+    }
+}
+
+
+@media all and (max-width: 320px){
+    .order_calculate_btn ul { 
+        gap: 4px; 
+    }
+    .card_product_left p {
+        font-size: 12px;
     }
 }
