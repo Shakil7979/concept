@@ -182,6 +182,9 @@ $(document).ready(function(){
 	function hideCartPopup() {
 		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.overlay_click_hide_search').fadeOut();   
+		$('.cart_product_popup_3').fadeIn();  
+		$('.card_popup_first_tab').hide();   
+		$('.card_popup_second_tab').show();   
 		$('.card_add_more button i').css({'color':''});
 	}
 	
