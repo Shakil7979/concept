@@ -146,6 +146,9 @@
     .search_group_btn button img {
         width: 20px;
     }
+    .after_scan_last { 
+        margin: 0 9px;
+    }
 }
 
 @media all and (max-width: 370px){
@@ -161,6 +164,9 @@
     .site_input_group input { 
         font-size: 14px;
     } 
+    .add_stock_input_group.add_stock_after_scan input {
+        text-align: right;
+    }
     .collection_product_top h4 {
         font-size: 10px;
     }
@@ -255,6 +261,13 @@
     .content_order_item_name h4 {
         font-size: 10px;
     }
+    .after_scan_last span { 
+        left: -6px; 
+        font-size: 16px;
+    }
+    .add_stock_scanner_text h4 {
+        font-size: 10px; 
+    }
     .verify_area .btn_green {
         width: 95px; 
     }
@@ -274,8 +287,8 @@
     .after_scan_middle p {
         font-size: 10px;
     }
-    .after_scan_last p { 
-        font-size: 16px;
+    .after_scan_last p {
+        font-size: 35px;
     }
     .right_content_item p {
         font-size: 10px;

@@ -35,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function(){
 
+		
+	$('.cal_data_get li button').on('click', function() {
+		var thiss = $(this).html(); 
+		var currentVal = $('.input_data_show').val();
+		$('.input_data_show').val(currentVal + thiss);
+	});
+	
+
 	// setTimeout(function(){
 	// 	$('.add_stock_input_group_input_script').fadeOut();
 	// 	$('.add_stock_select').fadeIn();
@@ -337,7 +345,6 @@ $(document).ready(function(){
 			hideCartPopup();
 		}
 	});
-	
 	
 	
 
