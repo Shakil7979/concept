@@ -267,6 +267,7 @@ ul li a,a{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content: space-between;
 	gap: 5px !important;
 	/* justify-content: space-between; */
 }
@@ -297,13 +298,16 @@ ul li a,a{
 }
 .add_st_scanner.barcode_product_with_scan {
 	width: 80%;
-	margin: 0 auto;
+	margin: 15px auto;
 }
+
 
 .barcode_product_with_scan .scan_product {
-	width: 35% !important; 
+	width: 72% !important; 
 }
-
+.barcode_product_with_scan.barcode_product_with_scan2 {
+	width: 100% !important; 
+}
 .order_list_area {
 	padding: 5px;
 	overflow: hidden;
@@ -724,7 +728,7 @@ input:focus-visible {
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
-	z-index: 999999;
+	z-index: 999999999;
 	box-shadow: 0 56px 21px 20px #596571A8;
 }
 
@@ -1275,7 +1279,7 @@ input:focus-visible {
 
 .left_search_area {
 	position: relative;
-	z-index: 99;
+	z-index: 99999;
 }
 
 .order_collection_box {
@@ -1688,7 +1692,7 @@ input:focus-visible {
 }
 
 .cal_dot {
-	color: #fff;
+	color: #fff !important;
 	background: #263238 !important;
 }
 
@@ -1863,6 +1867,7 @@ input:focus-visible {
 .verify_code li p {
 	background: #37474F;
 	width: 50px;
+	cursor: pointer;
 	height: 50px;
 	border-radius: 100%;
 	font-size: 42px;
@@ -2015,6 +2020,7 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	font-size: 22px; 
 	color: rgb(224, 224, 224);
 	line-height: 1.2; 
+	font-weight: 300;
 	margin-bottom: 5px;
 }
 
@@ -2046,10 +2052,10 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 }
 
 .site_input_group img {
-	position: absolute;
+	/* position: absolute;
 	left: 11px;
+	top: 8px; */
 	width: 25px;
-	top: 8px;
 }
 
  
@@ -2139,30 +2145,35 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 }
   
 .add_stock_select {
-	border-radius: 17px;
+	/* border-radius: 17px;
 	box-shadow: 0px 0px 76px 0px rgba(38, 50, 56, 0.35);
 	background: #fff;
 	padding: 2px;
-	position: relative;
-	display: none;
+	position: relative; */
+	/* display: none; */
+}
+
+.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
+ 
+	text-align: right;
 }
  
-.add_stock_select ul li p {
+.add_stock_select  p {
 	font-size: 14px; 
 }
   
-.add_stock_select ul li {
+.add_stock_select option {
 	display: flex;
 	justify-content: space-between;
 	padding: 2px 8px;
 }
 
-.add_stock_select ul li > span {
+.add_stock_select option > span {
 	font-size: 14px;
 	color: #e04d38;
 }
 
-.add_stock_select ul li p span {
+.add_stock_select option p span {
 	font-weight: 700;
 }
 
@@ -2171,8 +2182,8 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	padding-top: 8px;
 }
 
-.add_stock_select ul li.active ,
-.add_stock_select ul li:hover { 
+.add_stock_select option.active ,
+.add_stock_select option:hover { 
 	background: #e0e0e0;
 } 
 
@@ -2272,6 +2283,8 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	z-index: 9;
+	top: -15px;
 }
 
 .scan_scanner {
@@ -2329,6 +2342,53 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 	height: 44px;
 	font-size: 25px; 
 }
+
+.order_list_right_content_items{
+	height: 100vh !important;
+}
+
+.site_input_group button {
+	width: 100%;
+	margin-bottom: 11px;
+	background: #263238;
+	border: none;
+	padding: 9px 10px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+	transition: 0.3s;
+	height: 35px;
+}
+
+
+.site_input_group button:hover,
+.site_input_group button.active {
+	background: linear-gradient(90deg, rgba(1,165,84,1) 0%, rgba(1,235,119,1) 100%) !important;
+	box-shadow: 0px 0px 76px 0px rgba(38, 50, 56, 0.35);
+	color: #000 !important;
+	/* font-weight: 700; */
+}
+
+.red_color_btn {
+	color: #e04d38;
+}
+
+
+
+/* Hide default arrow in Webkit browsers (Chrome, Safari) */
+.search_group select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;   
+  }
+  
+  /* Hide default arrow in Internet Explorer */
+  .search_group select::-ms-expand {
+	display: none;
+  }
+  
 
 /*======================  End Page  ======================*/
 

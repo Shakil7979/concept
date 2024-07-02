@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
         <!-- Normalize --> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
@@ -39,27 +40,42 @@
                         <h3>סריקת מוצר
                             וקליטת מלאי 
                             </h3>
-                        <div class="add_st_scanner barcode_scan_bxx">
+                        <!-- <div class="add_st_scanner barcode_scan_bxx">
                             <img src="assets/images/stock/scanner.png" alt="">
                             <span class="barcode_scanner"></span>
-                        </div> 
+                        </div>  -->
+                        <div class="add_st_scanner barcode_product_with_scan">
+                            <img class="scan_scanner" src="assets/images/stock/sacnner.png" alt="">
+                            <img class="scan_product" src="assets/images/stock/scan_product.png" alt="">
+                            <span class="barcode_scanner"></span>
+                        </div>
                     </div> 
                 </div>
                 <div class="add_stock_input">
                     <h3>או חיפוש לפי שם מוצר</h3>
                     <div class="add_stock_input_group add_stock_input_group_input_script">
+
                         <input type="text" placeholder="שם המוצר כאן">
+                        <div class="select_2_select add_stock_select"> 
+                            <select id="single" class="js-states form-control">
+                                <option>אבוקד</option>
+                                <option><p><span>אבוקדו</span> האס הישר מהעץ</p><span>123234231234</span></option>
+                                <option class="active"><p><span>אבוקדו</span> טרי הישר מהמשק</p><span>123234123123</span></option>
+                                <option><p><span>אבוקדו</span> האס הישר מהעץ </p><span>123231241234</span></option>
+                                <option><p><span>אבוקדו</span> טרי הישר מהמשק </p><span>324234233423</span></option>
+                            </select>
+                        </div>
                         <button class="add_btn_stock btn_green">עדכן<i class="fa-solid fa-arrow-left"></i>  </button>
                     </div>
-                    <div class="add_stock_select">
+                    <!-- <div class="add_stock_select">
                         <ul>
-                            <li><p class="add_slect_p">אבוקד</p></li>
-                            <li><p><span>אבוקדו</span> האס הישר מהעץ</p><span>123234231234</span></li>
-                            <li class="active"><p><span>אבוקדו</span> טרי הישר מהמשק</p><span>123234123123</span></li>
-                            <li><p><span>אבוקדו</span> האס הישר מהעץ </p><span>123231241234</span></li>
-                            <li><p><span>אבוקדו</span> טרי הישר מהמשק </p><span>324234233423</span></li> 
+                            <li><p class="add_slect_p"></p></li>
+                            <li></li>
+                            <li ></li>
+                            <li></li>
+                            <li></li> 
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="right_content"> 
                     
@@ -98,7 +114,14 @@
         <!-- Modernizr -->
         <script src="assets/js/modernizr-3.11.2.min.js"></script>
         <!-- Custom JS (Handed)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+        <script>
+            $("#single").select2({
+                placeholder: "Select a programming language",
+                allowClear: true
+            }); 
+        </script>
     </body>
 </html>
 

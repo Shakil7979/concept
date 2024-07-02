@@ -240,10 +240,10 @@
                 </div>
                 <div class="left_search_area">
                     <ul>
-                        <li><a href="#"><img src="assets/images/login.png" alt=""></a></li>
+                        <li><a href="#" class="search_show_10"><img src="assets/images/login.png" alt=""></a></li>
                         <li><a href="#"><span class="search_order"><i class="fa-solid fa-magnifying-glass"></i></span></a></li> 
                         <li><a href="#"><span class="search_order_red">23 <span class="side_tooltip_1">tooltip</span></span></a></li> 
-                        <li><a href="#"><span class="search_order_yellow search_show_10">10 <span class="side_tooltip_2">tooltip</span></span></a></li> 
+                        <li><a href="#"><span class="search_order_yellow">10 <span class="side_tooltip_2">tooltip</span></span></a></li> 
                         <li><a href="#"><span class="search_order_green">8 <span class="side_tooltip_3">tooltip</span></span></a></li> 
                     </ul>
                 </div>
@@ -262,10 +262,10 @@
                         <span>לוקטה חלקית</span>
                     </div>
                     <div class="card_add_more">
-                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                        <button class="card_back_minus"><i class="fa-solid fa-circle-plus"></i></button>
                     </div>
                     <ul>
-                        <li><a href="#" class="btn_green btn_yellow"> הערות <i class="fa-solid fa-circle-exclamation"></i></a></li>
+                        <li><a href="#" class="btn_green btn_yellow btn_show_full_popup_2"> הערות <i class="fa-solid fa-circle-exclamation"></i></a></li>
                         <li><a href="#" class="btn_green"> סיימתי <i class="fa-solid fa-arrow-left"></i></a></li>
                     </ul>
                 </div>
@@ -357,7 +357,7 @@
                         <span>לוקטה חלקית</span>
                     </div>
                     <div class="card_add_more">
-                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                        <button class="card_add_more_pop"><i class="fa-solid fa-circle-plus"></i></button>
                     </div>
                     <ul>
                         <li><a href="#" class="btn_green btn_yellow btn_show_full_popup_2"> הערות <i class="fa-solid fa-circle-exclamation"></i></a></li>
@@ -470,25 +470,29 @@
             </div>
 
              <!-- order collection calculate -->
-            <div class="site_menu_popup">
+             <div class="site_menu_popup">
                 <div class="site_menu_title">
                     <h3>שלום <span>אביב</span></h3>
                 </div>
                 <div class="site_menu_input_field">
                     <div class="site_input_group">
-                        <input type="text" class="first_site_menu_field" name="" id="" placeholder="ליקוט הזמנות">
-                        <img src="assets/images/new/1.png" alt="">
+                        <!-- <input type="text" class="first_site_menu_field" name="" id="" placeholder=""> -->
+                        <button class="active">ליקוט הזמנות <img src="assets/images/new/1.svg" alt=""></button>
+                        
                     </div>
                     <div class="site_input_group">
-                        <input type="text" name="" id="" placeholder="קליטת מלאי חדש">
-                        <img src="assets/images/new/2.png" alt="">
+                        <!-- <input type="text" name="" id="" placeholder=""> -->
+                        <button>קליטת מלאי חדש <img src="assets/images/new/2.svg" alt=""></button>
+                        
                     </div>
                     <div class="site_input_group">
-                        <input type="text" name="" id="" placeholder="שיוך ברקוד למוצר">
-                        <img src="assets/images/new/3.png" alt="">
+                        <!-- <input type="text" name="" id="" placeholder=""> -->
+                        <button>שיוך ברקוד למוצר <img src="assets/images/new/3.svg" alt=""></button>
+                        
                     </div>
                     <div class="site_input_group">
-                        <input type="text" name="" id="" placeholder="התנתקות"> 
+                        <!-- <input type="text" name="" id="" placeholder="">  -->
+                        <button class="red_color_btn">התנתקות</button>
                     </div>
                 </div>
                 <button class="btn_arrow_search_cart2"><i class="fa-solid fa-arrow-right"></i></button>
@@ -500,8 +504,8 @@
                         <img src="assets/images/barcode.png" alt="">
                         <span class="barcode_scanner"></span>
                     </div> -->
-                    <div class="add_st_scanner barcode_product_with_scan">
-                        <img class="scan_scanner" src="assets/images/stock/scanner.png" alt="">
+                    <div class="add_st_scanner barcode_product_with_scan barcode_product_with_scan">
+                        <img class="scan_scanner" src="assets/images/stock/sacnner.png" alt="">
                         <img class="scan_product" src="assets/images/stock/scan_product.png" alt="">
                         <span class="barcode_scanner"></span>
                     </div>
