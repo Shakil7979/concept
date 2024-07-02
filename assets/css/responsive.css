@@ -387,4 +387,13 @@
     .card_product_left p {
         font-size: 12px;
     }
+    .order_calculate_btn ul li button {
+        width: 43px;
+        height: 43px;
+        font-size: 22px;
+    }
+    .order_calculate_tap a {
+        width: 58px;
+        font-size: 10px;
+    }
 }
