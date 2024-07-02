@@ -41,6 +41,18 @@ $(document).ready(function(){
 		var currentVal = $('.input_data_show').val();
 		$('.input_data_show').val(currentVal + thiss);
 	});
+		
+	$('.add_sttock_input').on('click', function() {
+		$('.add_stock_input_group_input_script.full_width_add').hide();  
+		$('.add_stock_select').show();
+	});
+		
+	$('.select_item_add').on('click', function() {
+		var thiss = $(this).attr('data_val'); 
+		$('.add_stock_select').hide();
+		$('.add_stock_input_group_input_script.full_width_add').show();     
+		$('.add_sttock_input').val(thiss);   
+	});
 	
 
 	// setTimeout(function(){

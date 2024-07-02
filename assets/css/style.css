@@ -2160,17 +2160,45 @@ button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visibl
 }
   
 .add_stock_select {
-	/* border-radius: 17px;
+	border-radius: 17px;
 	box-shadow: 0px 0px 76px 0px rgba(38, 50, 56, 0.35);
 	background: #fff;
-	padding: 2px;
-	position: relative; */
-	/* display: none; */
+	padding: 8px;
+	position: relative;
+	display: none;
 }
 
 .select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
  
 	text-align: right;
+}
+
+.add_stock_select li > span {
+	font-size: 14px;
+	color: #e04d38;
+}
+
+.add_stock_select input {
+	width: 100%;
+	margin-bottom: 4px;
+	border: none;
+}
+
+.add_stock_select li {
+	display: flex;
+	justify-content: space-between;
+	padding: 2px 0;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.add_stock_input_group.add_stock_input_group_input_script.full_width_add input {
+	width: 100% !important;
+	font-size: 14px;
+}
+
+.add_stock_select li:hover { 
+	background: #ddd;
 }
  
 .add_stock_select  p {
