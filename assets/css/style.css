@@ -880,10 +880,11 @@ input:focus-visible {
 }
 
 .position_fixed_order {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	background: #E0E0E0BD;
 	padding-bottom: 5px;
+	max-width: 80%;
 }
 
 .search_group_btn button img {
@@ -1495,6 +1496,11 @@ input:focus-visible {
 	padding: 16px;
 	border-radius: 10px;
 	color: #fff;
+	border: 1px solid transparent;
+}
+
+.cart_product_search input:focus {
+	border: 1px solid #ddd;
 }
 
 .cart_product_search i {

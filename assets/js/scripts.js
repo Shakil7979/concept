@@ -9,93 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			$('.right_logo_position').show();    
         }
     });
-});
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var picker = new Pikaday({
-//         field: document.getElementById('datepicker'),
-//         format: 'ddd MMM DD YYYY', // Format for displaying the date in the input field
-//         toString(date, format) {
-//             // Format the date to 'MM/DD/YYYY' when selected
-//             const day = date.getDate();
-//             const month = date.getMonth() + 1; // Month is zero-based
-//             const year = date.getFullYear();
-//             return `${month}/${day}/${year}`;
-//         },
-//         onSelect: function(date) {
-//             // Optional: Log the selected date in console
-//             console.log('Selected date: ' + picker.toString(date));
-//         }
-//     });
-// });
-
+}); 
 
 
 
 
 $(document).ready(function(){
-
-		
-	$('.cal_data_get li button').on('click', function() {
-		var thiss = $(this).html(); 
-		var currentVal = $('.input_data_show').val();
-		$('.input_data_show').val(currentVal + thiss);
-	});
-		
-	$('.add_sttock_input').on('click', function() {
-		$('.add_stock_input_group_input_script.full_width_add').hide();  
-		$('.add_stock_select').show();
-	});
-		
-	$('.select_item_add').on('click', function() {
-		var thiss = $(this).attr('data_val'); 
-		$('.add_stock_select').hide();
-		$('.add_stock_input_group_input_script.full_width_add').show();     
-		$('.add_sttock_input').val(thiss);   
-	});
-	
-
-	// setTimeout(function(){
-	// 	$('.add_stock_input_group_input_script').fadeOut();
-	// 	$('.add_stock_select').fadeIn();
-	// 	$('.barcode_scan_bxx .barcode_scanner').css({'width':'100%','top':'-2%','animation':'inherit'});
-	// }, 3000);
-
-	$('html').removeAttr('class');
-	$('.login_form').css({'bottom':'0'});
-
-	function showDatePicker() {
-		this.showPicker();
-	}
-
-	// Get the date input element
-	const dateInput = document.getElementById('dateInput');
-
-	// Add both focus and click event listeners
-	dateInput.addEventListener('focus', showDatePicker);
-	dateInput.addEventListener('click', showDatePicker);
- 
-
-	$(document).on('click', '.verify_code li p', function() {
-        $('.verify_code li p').removeClass('active'); 
-        $(this).addClass('active'); 
-    });
-
-	$(document).on('click', '.barcode_btn a, .verify_area_overlay', function() {
-        $('.verify_area').fadeOut();  
-    });
-
-	$(document).on('click', '.right_content_item', function() {
-        var $content = $(this).find('.right_hide_content');
-        if ($content.is(':visible')) {
-            $content.slideUp();
-        } else {
-            $('.right_hide_content').slideUp();
-            $content.slideDown();
-        }
-    }); 
-
-	// check for swipe 
 
 	function showSlideBox() {
 		$('.table_search_slide_box').css({'right':'0'});   
@@ -153,12 +72,7 @@ $(document).ready(function(){
 	});
 	
 
-	// check for swipe 
-
-
-
-
-
+	// check for swipe  
 	$(document).on('click','.btn_printer_on',function(){ 
 		$('.verify_area').show();     
 	});
@@ -359,6 +273,71 @@ $(document).ready(function(){
 	});
 	
 	
+
+		
+	$('.cal_data_get li button').on('click', function() {
+		var thiss = $(this).html(); 
+		var currentVal = $('.input_data_show').val();
+		$('.input_data_show').val(currentVal + thiss);
+	});
+		
+	$('.add_sttock_input').on('click', function() {
+		$('.add_stock_input_group_input_script.full_width_add').hide();  
+		$('.add_stock_select').show();
+	});
+		
+	$('.select_item_add').on('click', function() {
+		var thiss = $(this).attr('data_val'); 
+		$('.add_stock_select').hide();
+		$('.add_stock_input_group_input_script.full_width_add').show();     
+		$('.add_sttock_input').val(thiss);   
+	});
+	
+
+	// setTimeout(function(){
+	// 	$('.add_stock_input_group_input_script').fadeOut();
+	// 	$('.add_stock_select').fadeIn();
+	// 	$('.barcode_scan_bxx .barcode_scanner').css({'width':'100%','top':'-2%','animation':'inherit'});
+	// }, 3000);
+
+	$('html').removeAttr('class');
+	$('.login_form').css({'bottom':'0'});
+
+	function showDatePicker() {
+		this.showPicker();
+	}
+
+	// Get the date input element
+	const dateInput = document.getElementById('dateInput');
+
+	// Add both focus and click event listeners
+	dateInput.addEventListener('focus', showDatePicker);
+	dateInput.addEventListener('click', showDatePicker);
+	// $("#dateInput").datepicker({
+	// 	dateFormat: "yy-mm-dd"
+	// });
+ 
+
+	$(document).on('click', '.verify_code li p', function() {
+        $('.verify_code li p').removeClass('active'); 
+        $(this).addClass('active'); 
+    });
+
+	$(document).on('click', '.barcode_btn a, .verify_area_overlay', function() {
+        $('.verify_area').fadeOut();  
+    });
+
+	$(document).on('click', '.right_content_item', function() {
+        var $content = $(this).find('.right_hide_content');
+        if ($content.is(':visible')) {
+            $content.slideUp();
+        } else {
+            $('.right_hide_content').slideUp();
+            $content.slideDown();
+        }
+    }); 
+
+	// check for swipe 
 
 
 
