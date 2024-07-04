@@ -316,6 +316,13 @@ $(document).ready(function(){
 	// $("#dateInput").datepicker({
 	// 	dateFormat: "yy-mm-dd"
 	// });
+
+	$("#dateInput").datepicker({
+		dateFormat: "yy-mm-dd",
+		showOn: "both", // Show the datepicker on focus and button click
+		buttonImageOnly: true, // Use the button image only
+		buttonImage: "path/to/calendar-icon.png" // Path to a custom icon (optional)
+	});
  
 
 	$(document).on('click', '.verify_code li p', function() {
