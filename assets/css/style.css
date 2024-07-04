@@ -1027,10 +1027,9 @@ input:focus-visible {
 
 
 
-
 .order_collection_box {
 	margin-top: 50px;
-	height: 87vh;
+	height: 84vh;
 	overflow-y: scroll;
 	scrollbar-width: none;
 	-ms-overflow-style: none;

@@ -308,18 +308,11 @@ $(document).ready(function(){
 	}
 
 	// Get the date input element
-	// const dateInput = document.getElementById('dateInput');
+	const dateInput = document.getElementById('dateInput');
 
-	// // Add both focus and click event listeners
-	// dateInput.addEventListener('focus', showDatePicker);
-	// dateInput.addEventListener('click', showDatePicker); 
-
-	// $("#dateInput").datepicker({
-	// 	dateFormat: "yy-mm-dd",
-	// 	showOn: "both", // Show the datepicker on focus and button click
-	// 	buttonImageOnly: true, // Use the button image only
-	// 	buttonImage: "path/to/calendar-icon.png" // Path to a custom icon (optional)
-	// });
+	// Add both focus and click event listeners
+	dateInput.addEventListener('focus', showDatePicker);
+	dateInput.addEventListener('click', showDatePicker); 
  
 
 	$(document).on('click', '.verify_code li p', function() {
