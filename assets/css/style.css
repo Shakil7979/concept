@@ -768,51 +768,14 @@ input:focus-visible {
 	color: #fff;
 }
 
+#dateInput{
+	text-align: right;
+}
+
 .search_group {
 	position: relative;
 }
-
-/* date type work or not for check  */
-
-.search_group input[type="date"] { 
-	text-align: right; /* Align text to the right */
-	padding-right: 10px; /* Adjust padding to make space for the icon */
-	position: relative;
-}
-
-/* Adjust the calendar icon */
-.search_group input[type="date"]::-webkit-calendar-picker-indicator {
-	position: absolute;
-	right: 0;
-	padding: 0 10px;
-	cursor: pointer; /* Ensure the cursor changes to pointer to indicate clickable */
-}
-
-/* Hide the icon for other browsers (non-WebKit) and manage positioning through JavaScript */
-.search_group input[type="date"]::-webkit-clear-button,
-.search_group input[type="date"]::-webkit-inner-spin-button {
-	display: none;
-}
-
-.search_group input[type="date"] { 
-	text-align: right; /* Align text to the right */
-	padding-right: 10px; /* Adjust padding to make space for the icon */
-	position: relative;
-}
-
-/* WebKit browsers (Chrome, Safari) */
-.search_group input[type="date"]::-webkit-calendar-picker-indicator {
-	position: absolute;
-	right: 0;
-	padding: 0 10px;
-	cursor: pointer;
-}
-
-.search_group input[type="date"]::-webkit-inner-spin-button,
-.search_group input[type="date"]::-webkit-clear-button {
-	display: none;
-}
-
+ 
 /* Firefox */
 .search_group input[type="date"]::-moz-focus-inner {
 	border: 0;
