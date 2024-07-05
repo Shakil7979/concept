@@ -418,14 +418,6 @@ $(document).ready(function(){
             $('.right_hide_content').slideUp();
             $content.slideDown();
         }
-    }); 
-
-	// check for swipe 
-
-
-
-	
-
-
+    });  
 
 });
