@@ -113,7 +113,9 @@ $(document).ready(function(){
 		if(card_minus_count == 1){
 			$('.cart_product_popup').css({'bottom':'-100%'});   
 			$('.overlay_click_hide_search').fadeOut();   
-			$('.cart_product_popup_3').fadeIn();  
+			setTimeout(() => { 
+				$('.cart_product_popup_3').show();  	
+			}, 300);
 			$('.card_popup_first_tab').hide();   
 			$('.card_popup_second_tab').show();   
 			$('.card_add_more button i').css({'color':''});
@@ -284,7 +286,7 @@ $(document).ready(function(){
 		$('.card_popup_first_tab').show();   
 		$('.overlay_click_hide_search').fadeIn();    
 		$('.card_popup_second_tab').hide();   
-		$('.cart_product_popup_3').fadeOut();   
+		$('.cart_product_popup_3').hide();   
 		$('.card_add_more button i').css({'color':'#949DA1'});
 		$('.card_add_more button').html('<i class="fa-solid fa-circle-minus"></i>'); 
 	}
@@ -312,14 +314,14 @@ $(document).ready(function(){
 		startY = touch.pageY;
 	});
 	
-	$('.cart_product_popup_3').on('touchmove', function(event) {
+	$('.card_back_minus').on('touchmove', function(event) {
 		var touch = event.touches[0];
 		endY = touch.pageY;
 	
 		var deltaY = endY - startY;
 	
 		if (deltaY < -50) {
-			// Swipe up detected on .cart_product_popup_3
+			// Swipe up detected on .card_back_minus
 			showCartPopup();
 		}
 	});
