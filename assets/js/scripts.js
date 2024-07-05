@@ -37,6 +37,7 @@ $(document).ready(function(){
 	
 	$(document).on('click', '.search_order', function() { 
 		showSlideBox(); 
+		$('.site_menu_popup').css({'right':'-100%'});   
 		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.card_add_more button').html('<i class="fa-solid fa-circle-plus"></i>'); 
 	});
@@ -228,7 +229,8 @@ $(document).ready(function(){
 	// button popup show 
 	$(document).on('click','.search_show_10',function(){ 
 		$('.site_menu_popup').css({'right':'0%'});    
-		$('.overlay_click_hide_search').fadeIn();  
+		$('.table_search_slide_box').css({'right':'-100%'});    
+		$('.overlay_click_hide_search').fadeIn(); 
 		$('.cart_product_popup_3').hide();    
 		$('.right_content_footer').hide();   
 		$('.cart_product_popup').css({'bottom':'-100%'});   
@@ -292,7 +294,7 @@ $(document).ready(function(){
 	}
 	
 	function hideCartPopup() {
-		$('.cart_product_popup').css({'bottom':'-100%'});   
+		// $('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.overlay_click_hide_search').fadeOut();   
 		$('.cart_product_popup_3').fadeIn();  
 		$('.card_popup_first_tab').hide();   
@@ -318,20 +320,32 @@ $(document).ready(function(){
 		var touch = event.touches[0];
 		endY = touch.pageY;
 	
-		var deltaY = endY - startY;
+		var deltaY = endY - startY; 
 	
 		if (deltaY < -50) {
-			// Swipe up detected on .card_back_minus
-			showCartPopup();
+			// Swipe up detected 
+			showCartPopup(); 
 		}
 	});
 	
-	$('.cart_product_popup').on('touchstart', function(event) {
+	$('.cart_product_popup_3').on('touchmove', function(event) {
+		var touch = event.touches[0];
+		endY = touch.pageY;
+	
+		var deltaY = endY - startY; 
+	
+		if (deltaY < -50) {
+			// Swipe up detected 
+			showCartPopup(); 
+		}
+	});
+	
+	$('.cart_product_popup .cart_popup_box').on('touchstart', function(event) {
 		var touch = event.touches[0];
 		startY = touch.pageY;
 	});
 	
-	$('.cart_product_popup').on('touchmove', function(event) {
+	$('.cart_product_popup .cart_popup_box').on('touchmove', function(event) {
 		var touch = event.touches[0];
 		endY = touch.pageY;
 	
@@ -340,6 +354,7 @@ $(document).ready(function(){
 		if (deltaY > 50) {
 			// Swipe down detected on .cart_product_popup
 			hideCartPopup();
+			$('.cart_product_popup').css({'bottom':'-100%'}); 
 		}
 	});
 	
