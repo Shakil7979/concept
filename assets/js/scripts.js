@@ -20,10 +20,9 @@ $(document).ready(function(){
 		$('.table_search_slide_box').css({'right':'0'});   
 		$('.overlay_click_hide_search').fadeIn();    
 		$('.cart_product_popup_3').hide();    
-		$('.right_content_footer').hide();    
-		$('.cart_product_popup').css({'bottom':'-100%'}); 
+		$('.right_content_footer').hide();     
 		$('.search_order').css({'background':'#5c7480'});
-		$('.order_calculate_popup').css({'right':'-100%'});   
+		$('.order_calculate_popup').css({'right':'-100%'}); 
 
 	}
 	
@@ -38,6 +37,7 @@ $(document).ready(function(){
 	
 	$(document).on('click', '.search_order', function() { 
 		showSlideBox(); 
+		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.card_add_more button').html('<i class="fa-solid fa-circle-plus"></i>'); 
 	});
 	
@@ -64,9 +64,13 @@ $(document).ready(function(){
 			if (deltaX > 50) {
 				// Right to left swipe detected
 				showSlideBox();
+				$('.cart_product_popup').css({'bottom':'-100%'});  
+				$('.card_add_more button').html('<i class="fa-solid fa-circle-plus"></i>');  
 			} else if (deltaX < -50) {
 				// Left to right swipe detected
 				hideSlideBox();
+				$('.cart_product_popup').css({'bottom':'-100%'});  
+				$('.card_add_more button').html('<i class="fa-solid fa-circle-plus"></i>'); 
 			}
 		}
 	});
