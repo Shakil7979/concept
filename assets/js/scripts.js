@@ -184,6 +184,38 @@ $(document).ready(function(){
 		$('.right_content_footer').show();   
 	});
 
+	
+	// Swipe detection
+	var startX, startY, endX, endY;
+
+	$('body').on('touchstart', function(event) {
+		var touch = event.touches[0];
+		startX = touch.pageX;
+		startY = touch.pageY;
+	});
+
+	$('body').on('touchmove', function(event) {
+		var touch = event.touches[0];
+		endX = touch.pageX;
+		endY = touch.pageY;
+	});
+
+	$('body').on('touchend', function(event) {
+		var deltaX = startX - endX;
+		var deltaY = startY - endY;
+
+		if (Math.abs(deltaX) > Math.abs(deltaY)) {
+			if (deltaX < -50) {
+				$('.order_calculate_popup').css({'right':'-100%'});    
+				$('.overlay_click_hide_search').fadeOut();  
+				$('.cart_product_popup_3').show();    
+				$('.right_content_footer').show();    
+			}
+		}
+	});
+
+	// button popup hide 
+
 	$(document).on('click','.btn_arrow_search_cart2',function(){ 
 		$('.site_menu_popup').css({'right':'-100%'});    
 		$('.overlay_click_hide_search').fadeOut();  
@@ -191,6 +223,7 @@ $(document).ready(function(){
 		$('.right_content_footer').show();    
 	});
 
+	// button popup show 
 	$(document).on('click','.search_show_10',function(){ 
 		$('.site_menu_popup').css({'right':'0%'});    
 		$('.overlay_click_hide_search').fadeIn();  
@@ -199,8 +232,40 @@ $(document).ready(function(){
 		$('.cart_product_popup').css({'bottom':'-100%'});   
 		$('.card_add_more button').html('<i class="fa-solid fa-circle-plus"></i>'); 
 		$('.order_calculate_popup').css({'right':'-100%'}); 
-
 	});
+
+	// button popup swipe hide 
+
+	// Swipe detection
+	var startX, startY, endX, endY;
+
+	$('body').on('touchstart', function(event) {
+		var touch = event.touches[0];
+		startX = touch.pageX;
+		startY = touch.pageY;
+	});
+
+	$('body').on('touchmove', function(event) {
+		var touch = event.touches[0];
+		endX = touch.pageX;
+		endY = touch.pageY;
+	});
+
+	$('body').on('touchend', function(event) {
+		var deltaX = startX - endX;
+		var deltaY = startY - endY;
+
+		if (Math.abs(deltaX) > Math.abs(deltaY)) {
+			if (deltaX < -50) {
+				// Left to right swipe detected
+				$('.site_menu_popup').css({'right':'-100%'});    
+				$('.overlay_click_hide_search').fadeOut();  
+				$('.cart_product_popup_3').show();    
+				$('.right_content_footer').show();  
+			}
+		}
+	});
+
 
 	$('.search_order, .search_order_red, .search_order_yellow, .search_order_green').hover(
         function() {
