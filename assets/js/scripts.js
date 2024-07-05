@@ -327,7 +327,7 @@ $(document).ready(function(){
 			showCartPopup(); 
 		}
 	});
-	
+	 
 	$('.cart_product_popup_3').on('touchmove', function(event) {
 		var touch = event.touches[0];
 		endY = touch.pageY;
